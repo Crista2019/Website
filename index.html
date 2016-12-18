@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+                <title>Home</title>
+                <link rel="stylesheet" href="css/my_style.css" />
+                <!--Tracks website viewers-->
+                <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                        ga('create', 'UA-66063509-1', 'auto');
+                        ga('send', 'pageview');
+                </script>
+        </head>
+
+        <body>
+
+                <div id="directory" style="margin-top:-12.7%; word-spacing: 35px">
+                        <a class="bold" href="index.html">Homepage</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="photos.html">Photos</a>
+                        <a href="games.html">Games</a>
+                </div>
+
+                <div class="left">
+                        <h3 style="margin-top:23%"><u>About Me</u></h3>
+                        <img id="my_picture" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/13876561_1784701908439451_8818031583379567181_n.jpg?oh=267c588866e096292584be267cef1e10&oe=58861E8B"/>
+                        <h5>Interests/Hobbies:</h5>
+                        <ul type="none">
+                                <li>Rock Climbing</li>
+                                <li>Volunteering at the Library</li>
+                                <li>Scholastic Team</li>
+                                <li>Saxophone, Oboe, and Banjo</li>
+                                <li>Coding</li>
+                                <li>Girlscouting</li>
+                        </ul>
+                        <h5>Favorite Books:</h5>
+                        <ul type="none">
+                                <li>Hitchhiker's Guide to the Galaxy</li>
+                                <li>To Kill a Mockingbird</li>
+                                <li>The Princess Bride</li>
+                                <li>Pride and Prejudice</li>
+                                <li>The Catcher in the Rye</li>
+                        </ul>
+                        <a href="https://www.facebook.com/crista.falk.5"><img id="facebook" src="https://www.facebook.com/images/fb_icon_325x325.png"/></a>
+                        <h5><em>Visit My Facebook Page!</em></h5>
+                        <a href="https://girlswhocode-csm.symplicity.com/profiles/crista.falk"><img id="facebook" src="https://viewfromthegravytrain.files.wordpress.com/2014/01/icon_14894.png"/></a>
+                        <h5><em>Check Out My Online Resume!</em></h5>
+                        <h6>Last Updated: December 11th, 2016</h6>
+                </div>
+
+                <div id="outside">
+
+                        <article>
+                                <p>Greetings! My name is Crista Falk. Welcome to my website.</p>
+                        </article>
+
+                <!--    <article>
+                                <pre style="font: 17%/60% monospace;"></pre>
+                        </article> -->
+                        <article>
+                        <button onclick="compliment()">Randomly Generated Compliment</button>
+                        </article>
+
+                        <article>
+                        <button onclick="question()">Click Me</button>
+                        <p id="demo"></p>
+                        </article>
+
+                        <script>
+                                function compliment() {
+                                        var random = Math.floor(Math.random()*10);
+                                        if (random === 0){
+                                                alert("You are the only you to ever exist! Unless you include alternate timelines or parallel dimensions or clones or replicative cyborgs or shape shifters or twins or computer simulations or the sheer probability that over the continuation of space and time the potential, however slight, that the exact same configuration of atoms, cells, and mutations making up you could be formed, and the individuality you cling to is really just convoluted biological instructions easily duplicated by a technologically advanced alien society. But, you are definitely the coolest version of you I know.");
+                                        }
+                                        else if (random === 2){
+                                                alert("Treat yourself; you deserve it!");
+                                        }
+                                        else if (random === 3){
+                                                alert("The shirt you are wearing looks quite sharp.");
+                                        }
+                                        else if (random === 4){
+                                                alert("There is at least one person who cares about you, even if you are unaware.");
+                                        }
+                                        else if (random === 5){
+                                                alert("You know that thing you are trying to accomplish? You can do it!");
+                                        }
+                                        else if (random === 6){
+                                                alert("Nobody is perfect. I suppose that makes you nobody.");
+                                        }
+                                        else if (random === 7){
+                                                alert("Your bluish, brownish, greenish, blackish, hazelish, grayish eyes really light up when you smile");
+                                        }
+                                        else if (random === 8){
+                                                alert("You possess the unique ability to look and act only the way you can.");
+                                        }
+                                        else if (random === 9){
+                                                alert("Make a stranger smile today. I know you can!");
+                                        }
+                                        else {
+                                                alert("Even when you are alone, you are always number one.")
+                                        }
+                                }
+
+                                function question() {
+                                        var name = prompt("Hello, what is your name?", "Micheal Scott");                
+                                        if (name != null) {
+                                                document.getElementById("demo").innerHTML =
+                                                "Nice to meet you, " + name + ". Thank you for taking the time to read my webpage. Have a wonderful day, " + name +"."; 
+                                        }
+                                }
+                        </script>
+                </div>
+        </body>
+</html>
