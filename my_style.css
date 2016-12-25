@@ -1,15 +1,15 @@
 body {
  margin: 0;
- background: #efedf5;
+ background: rgb(235, 202, 151)
 }
 
 div.left {
- border: 2px solid black;
+ border: 2px solid rgb(163, 72, 27);
  text-align: center;
  display: inline;
  float: left;
  color: black;
- background: rgba(188, 189, 220, .8);
+ background: rgba(228, 157, 103, .8);
  margin-left: 3%;
  padding-left: 1%;
  padding-right: 1%;
@@ -48,7 +48,7 @@ ul li {
 
 #outside {
  font-size: 40px;
- color: rgb(117, 107, 177);
+ color: rgb(163, 72, 27);
  text-align: center;
  float: center;
  margin-top: 12%;
@@ -59,6 +59,7 @@ ul li {
  margin-left: 300px;
  border-radius: 5px;
 }
+
 article {
  padding-top: 10px;
  margin: 0, auto;
@@ -76,8 +77,8 @@ article {
  width: 100%;
  margin-left: -2px;
  margin-top: -9px;
- background: rgba(188, 189, 220, .8);
- border: 2px solid black;
+ background: rgba(228, 157, 103, .8);
+ border: 2px solid rgb(163, 72, 27);
  font-size: 35px;
  padding: .2%;
  padding-top: 1%;
@@ -90,13 +91,14 @@ a:link {
  color: black;
  text-decoration: none;
 }
+
 a:visited {
  color: black;
 }
 
 a:hover {
  text-decoration: underline;
- color: rgb(117, 107, 177);;
+ color: rgb(163, 72, 27);
 }
 
 /*blog post*/
@@ -109,7 +111,7 @@ a:hover {
 }
 
 .background {
- background: rgba((25, 40, 40,.6));
+ background: rgba(235, 202, 151, .6);
 }
 
 .doodle {
@@ -119,6 +121,7 @@ a:hover {
  margin-left: 5%;
  margin-top: 5%;
 }
+
 /*photos*/
 .table {
  position: static;
@@ -146,6 +149,7 @@ th {
  font-size: 60px;
  padding-bottom: 8%;
 }
+
 .filler {
  background: black;
  color: white;
