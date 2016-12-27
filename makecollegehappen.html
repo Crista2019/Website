@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+        <head>
+                <title>Make College Happen</title>
+                <link rel="stylesheet" href="css/my_style.css" />
+                <script>
+                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                        ga('create', 'UA-66063509-1', 'auto');
+                        ga('send', 'pageview');
+                </script>
+        </head>
+
+        <body>
+                <div id="directory" style="margin-top: -9.5px; word-spacing: 25px">
+                        <a href="index.html">Homepage</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="photos.html">Photos</a>
+                        <a href="games.html">Games</a>
+                        <a class="strong" href="makecollegehappen.html" style="word-spacing: 0px ">Make College Happen</a>
+                </div>
+
+                <div class="left" style="height: 10px; width: 90%; margin-top: 10%; float: left">
+                        <h2>How do I plan to <i>make college happen?</i></h2>
+                        <button onclick="plan()">Here is my college plan!</button>
+                        <p id="plan"></p>
+                </div>
+
+                <div class="left" style="height: 10px; width: 90%; margin-top: 10%; float: left">
+                        <h2>What am I doing <i>now?</i></h2>
+                        <button onclick="now()">There is no time like the present!</button>
+                        <p id="now"></p>
+                </div>
+
+                <div class="left" style="height: 10px; width: 90%; margin-top: 10%; float: left">
+                        <h2>How will I <i>pay for college?</i></h2>
+                        <button onclick="pay()">Here is my payment plan!</button>
+                        <p id="pay"></p>
+                </div>
+
+                <div style="width: 100%; text-align:center; display:inline-block; margin-top: 2%">
+                        <p>For additional information on events I have been involved in, check out <a href="blog.html" style="color: blue">my blog</a>.</p>
+                        <p>See the code for this page <a href="MCH_code.html" style="color: blue">here</a>.</p>
+                        <marquee behavior="alternate"><p>Page created December 2016 for the <em>Sallie Mae "Make College Happen Challenge"</em></p></marquee>
+                </div>
+
+                <script>
+                        function plan() {
+                                document.getElementById("plan").innerHTML =
+                                "My plan to make college happen adheres to the following criteria points: Research, Academics, Savings, Extracurriculars, and Applications. The research phase includes signing up for college preparation websites such as Chegg, the College Board, and SallieMae to inform myself of potential colleges and preparation advice. Academically, I will continue to maintain straight \"A\"s and a GPA above 4.0 throughout my high school career. Along with this, I will study and prepare diligently for important tests and entrance exams such as the SAT. As for saving and extracurriculars, more detailed explanation is provided below. When application season approaches, I will refine my essay wiring, proofing, and editing skills. I will also solicit my transcripts from my counselor as well as letters of recommendation from my teachers and mentors. Ultimately, I will need to discern my favorite college, dream universities and backup schools alike, and apply!";
+                        }
+                        function now() {
+                                document.getElementById("now").innerHTML =
+                                "Now, my sophomore year in high school, I am developing a working list of potential colleges I would like to attend. This list includes: MIT, Carnegie Mellon University, Stanford University, UC Berkeley, Haverford College, University of Illinois at Urbana Champaign, UC San Diego, and more to come. Additionally, I have been exploring prospective majors and careers. Because I plan to work in a STEM field, particular in regards to either computer science, mathematics, and/or physics, I have chosen a suitable academic course-load. Personally, this entails taking all honors or AP core classes. My passion for science has also driven me to take independent studies in order to overcome my school's lack of offered computer science classes. During my freshman year, I created and followed a curriculum on Electronics: Principles and Applications using an Arduino dev board and C++. This year, I am taking an IS regarding Data Structures and Algorithms. I am also on an accelerated science path, taking both honors biology for sophomores and honors chemistry traditionally for juniors and seniors. I've filled my schedule with extracurriculars that both interest me and help me to distinguish myself from other college applicants. These include INEL Varsity Scholastic Team, the LCHS band program, programming for the FIRST Robotics Competition, Girl Scouting, rock climbing club, and volunteering at the Coeur d'Alene Library.";
+                        }
+
+                        function pay() {
+                                document.getElementById("pay").innerHTML =
+                                "My plan to pay for college has already begun. The initial phase has been researching and comparing the cost of attending college, varying from school to school. Along with this, I have started allocated money to afford AP/entrance exams, college application fees, and eventual tuition, books, and housing. Although the school year brings with it a loaded schedule, I plan to work all four summers prior to leaving for college. Last summer, I worked for Post Falls Parks and Rec as a park assistant at Q'emiln Park. This summer, I would like to seek out another job, potentially even a paid internship related to computer science. Moreover, I will utilize TRIO Education Talent Search for help filling out the FAFSA to apply for financial aid. Of course, I will also continue to apply for scholarships to pay my way to college!";  
+                        }
+                </script>
+        </body>
+
+</html>
