@@ -1,9 +1,11 @@
 body {
+ font-family: "Advent Pro", "Lucida Console", Monaco;
  margin: 0;
  background: rgb(235, 202, 151)
 }
 
 div.left {
+ font-family: "Amatic SC", "Courier New", Courier;
  border: 2px solid rgb(163, 72, 27);
  text-align: center;
  display: inline;
