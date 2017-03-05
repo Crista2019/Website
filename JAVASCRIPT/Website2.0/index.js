@@ -1,0 +1,38 @@
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function who() {
+  document.getElementById("who").innerHTML =
+  "Crista Falk; Age: 16; Sophomore at Lake City High School";
+}
+
+function what() {
+  document.getElementById("what").innerHTML =
+  "Interests/Hobbies: Volunteering at the Library, Scholastic Team, Saxophone, Oboe, Coding, Robotics, Girlscouting";
+}
+
+function where() {
+  document.getElementById("where").innerHTML =
+  "Coeur d'Alene, Idaho";
+}
+
+
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
