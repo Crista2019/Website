@@ -6,7 +6,7 @@ function myFunction() {
 
 function who() {
   document.getElementById("who").innerHTML =
-  "Crista Falk; Age: 16; Sophomore at Lake City High School";
+  "Crista Falk; Homo Sapien";
 }
 
 function what() {
@@ -19,7 +19,7 @@ function what() {
 
 function where() {
   document.getElementById("where").innerHTML =
-  "Coeur d'Alene, Idaho";
+  "US Pacific Northwest";
 }
 
 
