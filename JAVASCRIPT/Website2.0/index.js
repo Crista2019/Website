@@ -12,7 +12,10 @@ function who() {
 function what() {
   document.getElementById("what").innerHTML =
   "Interests/Hobbies: Volunteering at the Library, Scholastic Team, Saxophone, Oboe, Coding, Robotics, Girlscouting";
+  document.getElementById("favorites").innerHTML =
+  "Favorite Books: Hitchhiker's Guide to the Galaxy, To Kill a Mockingbird, The Princess Bride, Slaughter House-Five, The Catcher in the Rye";
 }
+
 
 function where() {
   document.getElementById("where").innerHTML =
