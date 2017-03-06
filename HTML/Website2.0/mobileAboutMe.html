@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <meta charset="utf-8">
+        <title>Website Creator's Bio</title>
+        <script src="index.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Slab" rel="stylesheet">
+        <link href="index.css" rel="stylesheet" type="text/css" />
+        <style>
+          body{
+            background: rgb(253,202,162);
+        </style>
+        <script>
+          function mobWho() {
+            alert("Crista Falk; Age: 16; Sophomore at Lake City High School");
+          }
+          function mobWhat() {
+            alert("Interests/Hobbies: Volunteering at the Library, Scholastic Team, Saxophone, Oboe, Coding, Robotics, Girlscouting");
+            alert("Favorite Books: Hitchhiker's Guide to the Galaxy, To Kill a Mockingbird, The Princess Bride, Slaughter House-Five, The Catcher in the Rye");
+          }
+          function mobWhere() {
+            alert("Coeur d'Alene, Idaho");
+          }
+        </script>
+    </head>
+    <body>
+      
+      <div class="bio" style="height:45%">
+        <img id="profile" src="http://i.imgur.com/O7NkMrm.jpg"/>
+        <h1 class="title" style="font-size:1.7em">Crista Falk</h1>
+        <div class="text">
+          <button onclick="mobWho()">Who?</button>
+          <button onclick="mobWhat()">What?</button>
+          <button onclick="mobWhere()">Where?</button>
+        </div>
+      </div>
+      
+      <article id="leftLink" style="width:45%; margin-top: 110%">
+        <a href="https://girlswhocode-csm.symplicity.com/profiles/crista.falk"><em>Check out my online resume</em></a>
+      </article>
+      
+      <article id="rightLink" style="width:45%; margin-top: 110%">
+        <a href="https://github.com/Crista2019"><em>View my recent projects on Github</em></a>
+      </article>
+      
+      <div class="return">
+        <a href="index.html" class="title">Return to home</a>
+      </div> 
+      
+    </body>
+</html>
