@@ -22,7 +22,25 @@ function where() {
   "US Pacific Northwest";
 }
 
+/*
+var butterfly_1 = "http://i.imgur.com/NbEPukX.jpg";
+var butterfly_2 = "http://i.imgur.com/sBVlsbl.jpg";
+var butterfly_3 = "http://i.imgur.com/NnacQ2x.jpg";
+var butterfly_4 = "http://i.imgur.com/95urvpA.jpg";
+var butterflies = [butterfly_1, butterfly_2, butterfly_3, butterfly_4];
+var butterfly_index = 0;
 
+// Butterfly images
+function butterfly() {
+  if (butterfly_index < 5) {
+    butterfly_index ++;
+  }
+  else {
+    butterfly_index = 0;
+  }
+  document.getElementById("bufly").innerHTML =
+    butterflies[butterfly_index];
+}*/
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
