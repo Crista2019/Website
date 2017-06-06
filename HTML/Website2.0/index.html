@@ -4,12 +4,36 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Home Page</title>
-        <script src="index.js"></script>
+        <script>
+                /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+                
+                function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                
+                // Close the dropdown menu if the user clicks outside of it
+                window.onclick = function(event) {
+  
+                        if (!event.target.matches('.dropbtn')) {
+
+                            var dropdowns = document.getElementsByClassName("dropdown-content");
+                            var i;
+                            for (i = 0; i < dropdowns.length; i++) {
+                              var openDropdown = dropdowns[i];
+                              if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                              }
+                            }
+                          }
+                        }
+
+        </script>
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Slab" rel="stylesheet">
         <link href="index.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
-      <div class="dropdown">
+    <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">What To Explore First?</button>
         <div id="myDropdown" class="dropdown-content">
           <a href="aboutMe.html">Visit my bio page.</a>
@@ -19,9 +43,9 @@
           <!--<a href="games.html">Who doesn't like games?</a>-->
         </div>
       </div>
-      
+
       <div class="return">
-        <h6>Last Updated: May 6th, 2017</h6>
-      </div> 
+        <h6>Last Updated: June 6th, 2017</h6>
+      </div>
     </body>
 </html>
