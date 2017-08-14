@@ -10,9 +10,7 @@ The code *(HTML/CSS, JS)* used in maintaining my website, cristafalk.com.
 #Website1.0 | #Website2.0  | #Website3.0 
 ------------ | ------------- | -------------
 c. 2014-2015 | c.2016-2017 | c.2017-present
-First learning how to apply markup/scripting languages to "[real life](https://en.wikipedia.org/wiki/Real_life)" | 
-Trying to balance the inferiority complex of learning new languages such as Python, C++, etc with the comparable inferiority complex of designing an amatuer website > *improvement*| 
-Eventual choice to implement potential frameworks or APIs such as AngularJS or possibly ReactJS; any number of Google analytics or misc. APIs. To be determined.
+First learning how to apply markup/scripting languages to "[real life](https://en.wikipedia.org/wiki/Real_life)" | Trying to balance the inferiority complex of learning new languages such as Python, C++, etc with the comparable inferiority complex of designing an amatuer website > *improvement*| Eventual choice to implement potential frameworks or APIs such as AngularJS or possibly ReactJS; any number of Google analytics or misc. APIs. To be determined.
 Learning phase | Self-Aware Learning Phase | Still Learning, but Learning *Better*
 
 # Crista's Official Computer Science Aspirations :clipboard:
