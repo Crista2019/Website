@@ -10,8 +10,9 @@ The code *(HTML/CSS, JS)* used in maintaining my website, cristafalk.com. I use 
 Website1.0 | Website2.0  | Website3.0 
 ------------ | ------------- | -------------
 c. 2014-2015 | c. 2016-2017 | c. 2017-present
-First learning how to apply markup/scripting languages to "[real life](https://en.wikipedia.org/wiki/Real_life)" | Trying to balance the inferiority complex of learning new languages such as Python, C++, etc with the comparable inferiority complex of designing an amatuer website *improvement*| Eventual choice to implement potential frameworks or APIs such as AngularJS or possibly ReactJS; any number of Google analytics or misc. APIs. To be determined.
+First learning how to apply markup/scripting languages to "[real life](https://en.wikipedia.org/wiki/Real_life)" | Trying to balance the inferiority complex of learning new languages such as Python, C++, etc with the comparable inferiority complex of designing an amatuer website (i.e. *improvement*)| Eventual choice to implement potential frameworks or APIs such as AngularJS or possibly ReactJS; any number of Google analytics or misc. APIs. To be determined.
 Learning phase | Self-Aware Learning Phase | Still Learning, but Learning *Better*
+![Reaction 1](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9-Xw7O-fYlWvAVkw-yZz_WD46XnmUOt-1R5vzsFp3Ao0PazGm) | ![Reaction 2](http://mtncatholic.com/wp-content/uploads/2016/10/6357600113572837231773916132_michael-scott-s-top-tantrums.png) | ![Reaction 1](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9CNDdgctA7eSvOmI0ibVeMy60zJ9MIZWAthbBYW34qmIDtk1d)
 
 # Crista's Official Computer Science Aspirations :clipboard:
 - [x] Learn How to Internet
