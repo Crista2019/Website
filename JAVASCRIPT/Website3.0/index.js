@@ -37,3 +37,20 @@ function unblur() {
   document.getElementById("profile").style.filter = "blur(0px)";
   document.getElementById("profile").style.Webkitfilter = "blur(0px)";
 }
+
+// Resume Zoom 
+var hasBeenClicked = false;
+function zoom() {
+  if (!hasBeenClicked) {
+    document.getElementById("resume").style.animation = "zoom 3s 1";
+    document.getElementById("resume").style.WebkitAnimation = "zoom 3s 1"; /* Chrome, Safari, Opera */
+    document.getElementById("resume").style.width = "650px";
+    hasBeenClicked === true;
+  }
+  // else {
+  //   document.getElementById("resume").style.animation = "zoom 3s 1";
+  //   document.getElementById("resume").style.WebkitAnimation = "zoom 3s 1"; /* Chrome, Safari, Opera */
+  //   document.getElementById("resume").style.width = "200px";
+  //   hasBeenClicked === false;
+  // }
+}
