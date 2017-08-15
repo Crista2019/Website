@@ -26,7 +26,10 @@ body {
   animation-iteration-count: 1;
   font-size: 30px;
 }
-
+#resume {
+    margin-top: 200px; 
+    width: 200px;
+  }
 a {
   text-decoration: none;
 }
@@ -79,6 +82,14 @@ a {
   90% {color: #FF8B8B; top:0px;}
   100% {color: #FEC5C5;}
 }
+@-webkit-keyframes zoom {
+  from {width: 200px;}
+  to {width: 650px;}
+}
+@keyframes zoom {
+  from {width: 200px;}
+  to {width: 650px;}
+}
 
 /* Smartphones (portrait and landscape) */
 @media only screen and (min-width : 320px) {
@@ -116,7 +127,7 @@ a {
     height: 200px;
   }
   body {
-    background-color: rgb(80,150,80);
+    background-color: rgb(50,50,50);
   }
   #arrow {
     height: 200px;
@@ -128,7 +139,7 @@ a {
 /* Computer Screens (Chromebook and wider) */
 @media only screen and (min-width : 1025px) {
   body {
-      background-color: rgb(50,50,50);
+    background-color: rgb(80,150,80);
   }
   #profile {
     border-radius: 50%;
@@ -141,8 +152,8 @@ a {
     margin-top: 250px;
   }
   #arrow {
-  height: 250px;
-  width: 250px;
-  margin-right: -45px;
+    height: 250px;
+    width: 250px;
+    margin-right: -45px;
   }
 }
