@@ -1,5 +1,6 @@
-.row > .column {
+.column > .row {
   padding: 0 8px;
+  padding-top: 20px;
 }
 
 .row:after {
@@ -8,15 +9,30 @@
   clear: both;
 }
 
-.column {
+.row {
   float: left;
   width: 80%;
   display: inline-block;
+  margin-bottom: 70px;
 }
 
-p.column {
+.row:hover {
+  background: rgba(50,50,150,.25);
+}
+
+p.row {
   display: block;
   float: left;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 25px;
+  width: 60%;
+  margin-left: 20%;
 }
 
 /* The Modal (background) */
@@ -62,6 +78,7 @@ p.column {
 
 .mySlides {
   display: none;
+  background-color: rgba(0,0,0,.95);
 }
 
 /* Next & previous buttons */
@@ -94,6 +111,16 @@ p.column {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+@media only screen and (min-width : 400px) {
+  #GS {
+    width:100%;
+  }
+}
+
+#GS {
+  width:800px;
+}
+
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -112,7 +139,7 @@ p.column {
 
 .view {
   opacity: 0.6;
-  width: 110px;
+  width: 100px;
   height: 80px;
   margin-right: 20px;
   float: left;
