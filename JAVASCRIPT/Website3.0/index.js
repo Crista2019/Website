@@ -38,13 +38,13 @@ function unblur() {
   document.getElementById("profile").style.Webkitfilter = "blur(0px)";
 }
 
-// Resume Zoom 
+// Resume Zoom
 var hasBeenClicked = false;
 function zoom() {
   if (!hasBeenClicked) {
     document.getElementById("resume").style.animation = "zoom 3s 1";
     document.getElementById("resume").style.WebkitAnimation = "zoom 3s 1"; /* Chrome, Safari, Opera */
-    document.getElementById("resume").style.width = "650px";
+    document.getElementById("resume").style.width = '80%';
     hasBeenClicked === true;
   }
   // else {
@@ -53,4 +53,83 @@ function zoom() {
   //   document.getElementById("resume").style.width = "200px";
   //   hasBeenClicked === false;
   // }
+}
+// Adjust the color pallete for chem essay (I am too indecisive to assign one definitively, anyway)
+var randColor;
+function colorSchemeShift() {
+  function color() {
+    var hexadecimal = Math.floor(Math.random()*256).toString(16);
+    return ("0"+String(hexadecimal)).substr(-2)
+  }
+  randColor = "#"+color()+color()+color();
+  // console.log(randColor);
+  document.body.style.backgroundColor = randColor;
+}
+
+var currentFontSize = "xx-small";
+
+function mediumFont() {
+  var x = document.querySelectorAll("p");
+  for (var i=0; i < x.length; i++) {
+    x[i].style.fontSize = "18px";
+  }
+  currentFontSize = "xx-medium";
+}
+S
+function largeFont() {
+  var x = document.querySelectorAll("p");
+  for (var i=0; i < x.length; i++) {
+    x[i].style.fontSize = "21px";
+  }
+  currentFontSize = "xx-large";
+}
+
+function smallFont() {
+  var x = document.querySelectorAll("p");
+  for (var i=0; i < x.length; i++) {
+    x[i].style.fontSize = "15px";
+  }
+  currentFontSize = "xx-small";
+}
+
+function hugeFont() {
+  var x = document.querySelectorAll("p");
+  for (var i=0; i < x.length; i++) {
+    x[i].style.fontSize = "25px";
+  }
+  currentFontSize = "xx-bigly";
+}
+
+function increaseFontSize() {
+  switch (currentFontSize) {
+    case "xx-small":
+      mediumFont();
+    break;
+    case "xx-medium":
+      largeFont();
+    break;
+    case "xx-large":
+      hugeFont();
+    break;
+    default:
+      hugeFont();
+    break;
+  }
+}
+
+function decreaseFontSize() {
+  switch (currentFontSize) {
+    case "xx-bigly":
+      largeFont();
+    break;
+    case "xx-large":
+      mediumFont();
+    break;
+    case "xx-medium":
+      smallFont();
+    break;
+    default:
+      smallFont();
+    break;
+  }
 }
