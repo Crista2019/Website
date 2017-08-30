@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Crista Falk</title>
-    <link href="/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Josefin+Sans" rel="stylesheet">
   </head>
   <body>
-    <script src="/lib/js/index.js"></script>
+    <script src="lib/js/index.js"></script>
     <img onmousedown="unblur()" alt="profile" id="profile" src="http://i.imgur.com/bVYhqG6.jpg"/>
     <div id="directory">
       <div class="dir_effect" style="margin-right: 40px">
@@ -18,8 +18,14 @@
           <a onmouseover="colorChange3()" onmouseout="normal3()" id="link3" href="projects.html">Projects</a>
           <a onmouseover="colorChange4()" onmouseout="normal4()" id="link4" href="resume.html">Resume</a>
         </div>
-        <h1 style="font-size: 50px; margin-top: 10px">Hi, my name is Crista Falk.</h1>
-        <h2 style="color:#FEC5C5; margin-top: -40px">This is my website.</h2>
+        <div id="down" onmousedown="dir_show()">&#8601;</div>
+        <div id="directory_text">
+          <h1 style="font-size: 50px; margin-top: 10px">Hi, my name is Crista Falk.</h1>
+          <div>
+            <h2 id="up" onmousedown="dir_hide()">&#8599;</h2>
+          </div>
+          <h2 style="color:#FEC5C5; margin-top: -40px">This is my website.</h2>
+        </div>
       </div>
     </div>
       <div style="margin-right:25%">
@@ -81,7 +87,7 @@
         <li><p><u>The Things They Carried</u> <br> ... by Tim O'Brien</p></li>
         <li><p><u>Slaughter House-Five</u> <br> ... by Kurt Vonnegut</p></li>
         <li><p><u>The Catcher in the Rye</u> <br> ... by J.D. Salinger</p></li>
-        <li><p><u>The C Programming Language</u> <br> ... by Kernighan and Ritchie</p><h5>(Ok, ok. So that last one's a joke.)</h5></li>
+        <li><p><u>The C Programming Language</u> <br> ... by Kernighan and Ritchie<h5>(Ok, ok. So that last one's a joke.)<h5></p></li>
       </ul>
     </div>
 
