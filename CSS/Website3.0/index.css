@@ -117,7 +117,43 @@ a {
   height: 0;
   transition: .5s ease;
 }
-
+#up {
+  display: block;
+  float: left;
+  margin-top: -45px;
+	margin-left: 10px;
+  color: rgb(25,25,75);
+	width: auto;
+	height: auto;
+	font-size: 30px;
+	text-align: right;
+}
+#up:hover {
+	cursor: pointer;
+  color: red;
+  font-size: 50px;
+  margin-top: -65px;
+  text-shadow: 2px 2px 5px black;
+}
+#down {
+  display: none;
+  float: right;
+	margin-top: -35px;
+	margin-right: 20px;
+  color: rgb(25,25,75);
+	width: 50px;
+	height: 20px;
+	font-size: 30px	;
+	text-align: left;
+}
+#down:hover {
+	cursor: pointer;
+  color: red;
+  font-size: 50px;
+	margin-top: -45px;
+	margin-right: 30px;
+  text-shadow: 2px 2px 5px black;
+}
 /* ANIMATIONS */
 @-webkit-keyframes project_hover {
 	from {color: red;}
