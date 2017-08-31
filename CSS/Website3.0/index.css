@@ -1,111 +1,286 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Crista Falk</title>
-    <link href="css/index.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Josefin+Sans" rel="stylesheet">
-  </head>
-  <body>
-    <script src="lib/js/index.js"></script>
-    <img onmousedown="unblur()" alt="profile" id="profile" src="http://i.imgur.com/bVYhqG6.jpg"/>
-    <div id="directory">
-      <div class="dir_effect" style="margin-right: 40px">
-        <div class="dir_effect" id="dir_links">
-          <a onmouseover="colorChange1()" onmouseout="normal1()" id="link1" href="index.html">Home</a>
-          <a onmouseover="colorChange2()" onmouseout="normal2()" id="link2" href="bio.html">Bio</a>
-          <a onmouseover="colorChange3()" onmouseout="normal3()" id="link3" href="projects.html">Projects</a>
-          <a onmouseover="colorChange4()" onmouseout="normal4()" id="link4" href="resume.html">Resume</a>
-        </div>
-        <div id="down" onmousedown="dir_show()">&#8665;</div>
-        <div id="directory_text">
-          <h1 style="font-size: 50px; margin-top: 10px">Hi, my name is Crista Falk.</h1>
-          <h2 style="color:#FEC5C5; margin-top: -40px">This is my website.</h2>
-          <div>
-            <br>
-            <h2 id="up" onmousedown="dir_hide()">&#8663;</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-      <div style="margin-right:25%">
-        <img alt="arrow" id="arrow" src="http://www.clker.com/cliparts/M/Z/m/3/U/K/red-arrow-left-md.png"/>
-      </div>
-    <div class="banner">
-      <h1 class="banner_title">Here is a thing.</h1>
-      <h1>As you may have heard, my name is Crista Falk.</h1>
-      <p>I do a number of things (see <a href="projects.html">projects</a>), I am a number of things (see <a href="resume.html">resume</a>), and I stand for a number of things (see <a href="bio.html">bio</a>).</p>
-      <p>Truthfully, all the aforementioned phrases are synonymous with one another.</p>
-      <h1>However.<h1>
-      <h2>The defining feature of my existensial purpose on this Earth may include but one sole factor:</h2>
-      <p><i>as life based on chains of carbon atoms, with a few other atoms, such as nitrogen or phosphorus, the most important characteristics of carbon as a basis for the chemistry of life being
-        that it has four valence bonds, and that the energy required to make or break a bond is at an appropriate level for building molecules, which are stable and reactive.</i></p>
-      <h1>And that is all you need to know about me.</h1>
+body {
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	/* background-image: url(http://i.imgur.com/7zE86SE.jpg);
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover; */
+	font-family: 'Josefin Sans', sans-serif;
+	color: white;
+}
+.project {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding: 20px;
+	animation: none;
+	width:50%;
+	margin-left: 20%;
+}
+.project:hover {
+	background-color: rgba(50,50,150,.1);
+	margin-left: 25%;
+	-webkit-animation: project_hover 5s infinite; /* Chrome, Safari, Opera */
+	animation: project_hover 5s infinite;
+}
+.banner {
+	display: inline-block;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width: 80%;
+	height: 100%;
+	border-radius: 0%;
+	background-color: rgba(50,50,150,.5);
+	padding: 10px;
+}
+#dir_links {
+	animation-name: color_change_animation;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	font-size: 30px;
+}
+#resume {
+		margin-top: 200px;
+		width: 200px;
+	}
+#resume:hover {
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+	color: rgb(110,50,150);
+}
 
-    </div>
-    <div class="banner">
-      <h5 class="banner_title">An additional thing.</h5>
-      <p style="margin-top: -40px">Take the liberty to click on everything; this website is SUPER clickable.<p>
-        <div class="dir_effect" style="background: rgba(0,0,0,.5)" id="dir_links">
-          <article class="container">
-            <!-- RGB Circle 1 icon by Icons8 -->
-            <img class="icon" src="https://png.icons8.com/rgb-circle-1/color/96">
-            <div onclick="colorSchemeShift()" class="overlay">
-              <div class="instruction">Change the <br>Color Scheme</div>
-            </div>
-          </article>
-          <article class="container">
-            <!-- Increase Font icon by Icons8 -->
-            <img class="icon" src="https://png.icons8.com/increase-font/p1em/96">
-            <div onclick="increaseFontSize()" class="overlay">
-              <div class="instruction">Increase the <br>Font Size</div>
-            </div>
-          </article>
-          <article class="container">
-            <!-- Collapse icon by Icons8 -->
-            <img class="icon" src="https://png.icons8.com/decrease-font/win10/96">
-            <div onclick="decreaseFontSize()" class="overlay">
-              <div class="instruction">Decrease the <br>Font Size</div>
-            </div>
-          </article>
-          <article class="container">
-            <!-- Exterior icon by Icons8 -->
-            <img class="icon" src="https://png.icons8.com/exterior/color/96">
-            <a href="index.html"><div class="overlay">
-              <div class="instruction">Revert to <br>Default Settings</div>
-            </div></a>
-          </article>
-        </div>
-    </div>
+#link1, #link2, #link3, #link4, .color {
+	-webkit-animation: color_change_animation 5s infinite; /* Chrome, Safari, Opera */
+	animation: color_change_animation 5s infinite;
+}
 
-    <div class="banner">
-      <h1 class="banner_title">Here are some of my favorite books.</h1>
-      <ul style="margin-right: 25px; text-align: center; list-style: none; font-size: 20px">
-        <li><p><u>Hitchhiker's Guide to the Galaxy</u> <br> ... by Douglas Adams</p></li>
-        <li><p><u>To Kill a Mockingbird</u> <br> ... by Harper Lee</p></li>
-        <li><p><u>The Princess Bride</u> <br> ... by William Goldman</p></li>
-        <li><p><u>The Things They Carried</u> <br> ... by Tim O'Brien</p></li>
-        <li><p><u>Slaughter House-Five</u> <br> ... by Kurt Vonnegut</p></li>
-        <li><p><u>The Catcher in the Rye</u> <br> ... by J.D. Salinger</p></li>
-        <li><p><u>The C Programming Language</u> <br> ... by Kernighan and Ritchie<h5>(Ok, ok. So that last one's a joke.)<h5></p></li>
-      </ul>
-    </div>
+.dir_effect {
+	background-color: rgba(50,50,150,.5);
+}
+.banner_title {
+	-webkit-animation: color_change_animation 5s infinite; /* Chrome, Safari, Opera */
+	animation: color_change_animation 5s infinite;
+	padding: 10px;
+	margin-top: 0px;
+	font-size: 50px;
+	font-family: 'Cabin Sketch', cursive;
+	background-color: rgba(50,50,150,.5);
+}
+.img_banner {
+	margin-top: 200px;
+	height: 300px;
+}
+#directory {
+	z-index: 1;
+	margin-top: -1px;
+	width: 100%;
+	height: 150px;
+	padding: 20px;
+	position: fixed;
+	font-family: 'Cabin Sketch', cursive;
+}
 
-    </div>
-    <div class="banner">
-      <h5 class="banner_title">Some quotes by which to live.</h5>
-      <p>"In the beginning the Universe was created. <br>This has made a lot of people very angry and been widely regarded as a bad move."</p>
-      <h4><i>- Douglas Adams</i></h4>
-      <br>
-      <p>"Simplicity is prerequisite for reliability."</p>
-      <h4><i>- Edsger W. Dijkstra</i></h4>
-      <br>
-      <p>"Humans are allergic to change. <br>They love to say, 'We've always done it this way.'<br>I try to fight that. <br>That's why I have a clock on my wall that runs counter-clockwise."</p>
-      <h4><i>- Grace Hopper</i></h4>
-    </div>
-    <!--<img class="img_banner" src=""/>
-    <img class="img_banner" src=""/>
-    <img class="img_banner" src=""/>-->
-  </body>
-</html>
+.container:hover .overlay {
+  height: 100%;
+	cursor: pointer;
+}
+.instruction {
+  white-space: nowrap;
+  color: white;
+  font-size: 50%;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.container {
+	display: inline-block;
+  position: relative;
+  width: 120px;
+}
+
+.icon {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+#up {
+  display: block;
+  float: left;
+  margin-top: -45px;
+	margin-left: 10px;
+  color: rgb(25,25,75);
+	width: auto;
+	height: auto;
+	font-size: 30px;
+	text-align: right;
+}
+#up:hover {
+	cursor: pointer;
+  color: red;
+  font-size: 50px;
+  margin-top: -65px;
+  text-shadow: 2px 2px 5px black;
+}
+#down {
+  display: none;
+  float: right;
+	margin-top: -35px;
+	margin-right: 20px;
+  color: rgb(25,25,75);
+	width: 50px;
+	height: 20px;
+	font-size: 30px	;
+	text-align: left;
+}
+#down:hover {
+	cursor: pointer;
+  color: red;
+  font-size: 50px;
+	margin-top: -45px;
+	margin-right: 30px;
+  text-shadow: 2px 2px 5px black;
+}
+/* Specifically used in chem_paper.html */
+h3#up, h3#down {
+	color: rgba(255,255,255,.5);
+}
+/* ANIMATIONS */
+@-webkit-keyframes project_hover {
+	from {color: red;}
+	to {color: black; background: white;}
+}
+@keyframes project_hover {
+	from {color: red;}
+	to {color: black; background: white;}
+}
+@-webkit-keyframes color_change_animation {
+	0%	 {color: #FFFFFF; top:0px;}
+	25%	{color: #FBB2B2; top:0px;}
+	50%	{color:#F96363; top:200px;}
+	75%	{color: #FF0000; top:200px;}
+	90% {color: #FF8B8B; top:0px;}
+	100% {color: #FEC5C5;}
+}
+@keyframes color_change_animation_animation {
+	0%	 {color: #FFFFFF; top:0px;}
+	25%	{color: #FBB2B2; top:0px;}
+	50%	{color: #F96363; top:200px;}
+	75%	{color: #FF0000; top:200px;}
+	90% {color: #FF8B8B; top:0px;}
+	100% {color: #FEC5C5;}
+}
+@-webkit-keyframes zoom {
+	from {width: 200px;}
+	to {width: 80%;}
+}
+@keyframes zoom {
+	from {width: 200px;}
+	to {width: 80%;}
+}
+#profile {
+	-moz-box-shadow: 10px 10px 5px rgba(5,5,5,.75);
+	box-shadow: 10px 10px 5px rgba(5,5,5,.75);
+	-webkit-box-shadow: 10px 10px 5px rgba(5,5,5,.75);
+}
+.line1 {
+		width: 0px; /* Use only border style */
+		height: 100%;
+		float: left;
+		border: 1px inset; /* This is default border style for <hr> tag */
+		color: white;
+}
+
+/* SCREEN SIZE CHANGES */
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-width : 320px) {
+	#profile {
+		border-radius: 50%;
+		-webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+		filter: blur(5px);
+		float: left;
+		margin-left: 50px;
+		width: 120px;
+		height: 120px;
+		margin-top: 300px;
+	}
+	body {
+		background-color: rgb(100,100,150);
+	}
+	#arrow {
+		height: 40%;
+		width: 40%;
+		margin-right: -20%;
+		margin-top: 250px;
+	}
+	#increaseFont, #decreaseFont {
+		display: none;
+	}
+}
+/* iPads (portrait and landscape) */
+@media only screen and (min-width : 768px){
+	#profile {
+		border-radius: 50%;
+		-webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+		filter: blur(5px);
+		float: left;
+		margin-top: 200px;
+		margin-left: 25%;
+		width: 200px;
+		z-index: -1;
+		height: 200px;
+	}
+	body {
+		background-color: rgb(80,150,80);
+	}
+	#arrow {
+		height: 200px;
+		width: 200px;
+		margin-top: 150px;
+		margin-top: 180px;
+	}
+	#increaseFont, #decreaseFont {
+		display: inline-block;
+	}
+}
+/* Computer Screens (Chromebook and wider) */
+@media only screen and (min-width : 1025px) {
+	body {
+		background-color: rgb(50,50,50);
+	}
+	#profile {
+		border-radius: 50%;
+		-webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+		filter: blur(5px);
+		float: left;
+		margin-left: 30%;
+		width: 250px;
+		height: 250px;
+		margin-top: 250px;
+	}
+	#arrow {
+		height: 250px;
+		width: 250px;
+		margin-right: -45px;
+	}
+	#increaseFont, #decreaseFont {
+		display: inline-block;
+	}
+}
