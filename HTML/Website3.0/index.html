@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Some Neat Things</title>
+    <title>Crista Falk</title>
     <link href="css/index.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Josefin+Sans" rel="stylesheet">
   </head>
   <body>
     <script src="lib/js/index.js"></script>
+    <img onmousedown="unblur()" alt="profile" id="profile" src="http://i.imgur.com/bVYhqG6.jpg"/>
     <div id="directory">
       <div class="dir_effect" style="margin-right: 40px">
         <div class="dir_effect" id="dir_links">
@@ -19,8 +20,8 @@
         </div>
         <div id="down" onmousedown="dir_show()">&#8665;</div>
         <div id="directory_text">
-          <h1 style="font-size: 50px; margin-top: 10px">Explore Some Things I've Done</h1>
-          <h2 style="color:#FEC5C5; margin-top: -40px">I do many a thing.</h2>
+          <h1 style="font-size: 50px; margin-top: 10px">Hi, my name is Crista Falk.</h1>
+          <h2 style="color:#FEC5C5; margin-top: -40px">This is my website.</h2>
           <div>
             <br>
             <h2 id="up" onmousedown="dir_hide()">&#8663;</h2>
@@ -28,33 +29,83 @@
         </div>
       </div>
     </div>
-    <article style="margin-top: 300px; position: absolute; width: 100%">
-    	<div class="project">
-        <div class="line1" style="height: 180px"></div>
-    		<h1><a href="https://github.com/Crista2019/Independent-Study-2015-2016">2016 Independent Study</a></h1>
-    		<p>Principles & Applications of Electronics</p>
-    		<h3>What to look for: Videos of Arduino Circuit Boards</h3>
-    		<h4><i>Aka: ALL the diodes</i></h4>
-    	</div>
+      <div style="margin-right:25%">
+        <img alt="arrow" id="arrow" src="http://www.clker.com/cliparts/M/Z/m/3/U/K/red-arrow-left-md.png"/>
+      </div>
+    <div class="banner">
+      <h1 class="banner_title">Here is a thing.</h1>
+      <h1>As you may have heard, my name is Crista Falk.</h1>
+      <p>I do a number of things (see <a href="projects.html">projects</a>), I am a number of things (see <a href="resume.html">resume</a>), and I stand for a number of things (see <a href="bio.html">bio</a>).</p>
+      <p>Truthfully, all the aforementioned phrases are synonymous with one another.</p>
+      <h1>However.<h1>
+      <h2>The defining feature of my existensial purpose on this Earth may include but one sole factor:</h2>
+      <p><i>as life based on chains of carbon atoms, with a few other atoms, such as nitrogen or phosphorus, the most important characteristics of carbon as a basis for the chemistry of life being
+        that it has four valence bonds, and that the energy required to make or break a bond is at an appropriate level for building molecules, which are stable and reactive.</i></p>
+      <h1>And that is all you need to know about me.</h1>
 
-    	<div class="project">
-        <div class="line1" style="height: 180px"></div>
-    		<h1><a href="https://github.com/Crista2019/Independent-Study-2016-2017">2017 Independent Study</a></h1>
-    		<p>Data Structures and Algorithms</p>
-    		<h3>What to look for: "Synthesis Project"</h3>
-    		<h4><i>Aka: Dungeons and Dragons data manipulation, but even cooler than it sounds</i></h4>
-    	</div>
+    </div>
+    <div class="banner">
+      <h5 class="banner_title">An additional thing.</h5>
+      <p style="margin-top: -40px">Take the liberty to click on everything; this website is SUPER clickable.<p>
+        <div class="dir_effect" style="background: rgba(0,0,0,.5)" id="dir_links">
+          <article class="container">
+            <!-- RGB Circle 1 icon by Icons8 -->
+            <img class="icon" src="https://png.icons8.com/rgb-circle-1/color/96">
+            <div onclick="colorSchemeShift()" class="overlay">
+              <div class="instruction">Change the <br>Color Scheme</div>
+            </div>
+          </article>
+          <article class="container">
+            <!-- Increase Font icon by Icons8 -->
+            <img class="icon" src="https://png.icons8.com/increase-font/p1em/96">
+            <div onclick="increaseFontSize()" class="overlay">
+              <div class="instruction">Increase the <br>Font Size</div>
+            </div>
+          </article>
+          <article class="container">
+            <!-- Collapse icon by Icons8 -->
+            <img class="icon" src="https://png.icons8.com/decrease-font/win10/96">
+            <div onclick="decreaseFontSize()" class="overlay">
+              <div class="instruction">Decrease the <br>Font Size</div>
+            </div>
+          </article>
+          <article class="container">
+            <!-- Exterior icon by Icons8 -->
+            <img class="icon" src="https://png.icons8.com/exterior/color/96">
+            <a href="index.html"><div class="overlay">
+              <div class="instruction">Revert to <br>Default Settings</div>
+            </div></a>
+          </article>
+        </div>
+    </div>
 
-    	<div class="project">
-        <div class="line1" style="height: 150px"></div>
-    		<h1><a href="chem_paper.html">The Chemistry & Physics of Computers</a></h1>
-    		<p>An awesome paper about the present and future microtech neccesary to adapt to a rapidly evolving world of computation</p>
-    		<h4><i>Aka: Moore and his WACKY law</i></h4>
-    	</div>
+    <div class="banner">
+      <h1 class="banner_title">Here are some of my favorite books.</h1>
+      <ul style="margin-right: 25px; text-align: center; list-style: none; font-size: 20px">
+        <li><p><u>Hitchhiker's Guide to the Galaxy</u> <br> ... by Douglas Adams</p></li>
+        <li><p><u>To Kill a Mockingbird</u> <br> ... by Harper Lee</p></li>
+        <li><p><u>The Princess Bride</u> <br> ... by William Goldman</p></li>
+        <li><p><u>The Things They Carried</u> <br> ... by Tim O'Brien</p></li>
+        <li><p><u>Slaughter House-Five</u> <br> ... by Kurt Vonnegut</p></li>
+        <li><p><u>The Catcher in the Rye</u> <br> ... by J.D. Salinger</p></li>
+        <li><p><u>The C Programming Language</u> <br> ... by Kernighan and Ritchie<h5>(Ok, ok. So that last one's a joke.)<h5></p></li>
+      </ul>
+    </div>
 
-    	<div class="project">
-    	<a href="https://github.com/Crista2019">View all my projects on Github</a>
-    	</div>
-	</article>
+    </div>
+    <div class="banner">
+      <h5 class="banner_title">Some quotes by which to live.</h5>
+      <p>"In the beginning the Universe was created. <br>This has made a lot of people very angry and been widely regarded as a bad move."</p>
+      <h4><i>- Douglas Adams</i></h4>
+      <br>
+      <p>"Simplicity is prerequisite for reliability."</p>
+      <h4><i>- Edsger W. Dijkstra</i></h4>
+      <br>
+      <p>"Humans are allergic to change. <br>They love to say, 'We've always done it this way.'<br>I try to fight that. <br>That's why I have a clock on my wall that runs counter-clockwise."</p>
+      <h4><i>- Grace Hopper</i></h4>
+    </div>
+    <!--<img class="img_banner" src=""/>
+    <img class="img_banner" src=""/>
+    <img class="img_banner" src=""/>-->
   </body>
 </html>
