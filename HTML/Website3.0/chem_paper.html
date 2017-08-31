@@ -19,13 +19,13 @@
             font-family: monospace;
             font-size: 20px;
             color: white;
-            margin-left: 20px;
+            margin-left: 30px ;
           }
         </style>
     </head>
     <body>
       <div id="directory">
-        <div id="directory_text" style="margin-right: 80px">
+        <div id="directory_text" style="margin-left: -15px; margin-right: 80px">
           <div class="dir_effect" style="background: rgba(0,0,0,.5)" id="dir_links">
             <article class="container">
               <!-- RGB Circle 1 icon by Icons8 -->
@@ -34,14 +34,14 @@
                 <div class="instruction">Change the <br>Color Scheme</div>
               </div>
             </article>
-            <article class="container">
+            <article id="increaseFont" class="container">
               <!-- Increase Font icon by Icons8 -->
               <img class="icon" src="https://png.icons8.com/increase-font/p1em/96">
               <div onclick="increaseFontSize()" class="overlay">
                 <div class="instruction">Increase the <br>Font Size</div>
               </div>
             </article>
-            <article class="container">
+            <article id="decreaseFont" class="container">
               <!-- Collapse icon by Icons8 -->
               <img class="icon" src="https://png.icons8.com/decrease-font/win10/96">
               <div onclick="decreaseFontSize()" class="overlay">
@@ -58,15 +58,15 @@
               </a>
             </article>
             <div>
-              <h3 id="up" onmousedown="dir_hide()">&#8599;</h3>
+              <h3 id="up" onmousedown="dir_hide()">&#8663;</h3>
             </div>
           </div>
         </div>
         <div>
-          <h3 id="down" style="margin-right: 50px; margin-top: 5px" onmousedown="dir_show()">&#8601;</h3>
+          <h3 id="down" style="margin-right: 50px; margin-top: 5px" onmousedown="dir_show()">&#8665;</h3>
         </div>
       </div>
-          <article style="margin-top: 200px; position: absolute; width: 100%">
+          <article style="margin-top: 200px; position: absolute; width: 101%; margin-left: -20px">
             <div style="text-align: center; line-height:90%">
               <h1 style="font-size: 45px; line-height: 150%">"The Chemistry of Computers"</h1>
               <h3>Crista Falk</h3>
@@ -89,7 +89,7 @@
               <p>National Research Council (US) Committee on Challenges for the Chemical Sciences in the 21st Century. “Chemical Theory and Computer Modeling: From Computational Chemistry to Process Systems Engineering.” Beyond the Molecular Frontier: Challenges for Chemistry and Chemical Engineering., U.S. National Library of Medicine, 1 Jan. 1970, www.ncbi.nlm.nih.gov/books/NBK207665/. Accessed 14 Apr. 2017.</p>
               <p>“Optical Computers.” Science News, vol. 143, no. 4, 23 Jan. 1993, p. 63., uncw.edu/phy/documents/Raphael_06.pdf. Accessed 15 Apr. 2017.</p>
             </div>
-            <a href="https://icons8.com">Icon pack by Icons8</a>
+            <a style="margin-bottom: 10px" href="https://icons8.com">Icon pack by Icons8</a>
           </article>
         </body>
       </html>
