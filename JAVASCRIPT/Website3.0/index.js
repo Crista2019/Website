@@ -133,3 +133,18 @@ function decreaseFontSize() {
     break;
   }
 }
+
+// Hide Obnoxious Directory Content
+function dir_hide() {
+  document.getElementById("down").style.display = "block";
+  document.getElementById("directory_text").style.display = "none";
+  // document.getElementById("dir_links").style.visibility = "hidden";
+  // document.getElementById("directory").style.visibility = "hidden";
+}
+
+function dir_show() {
+  document.getElementById("down").style.display = "none";
+  document.getElementById("directory_text").style.display = "block";
+  // document.getElementById("dir_links").style.visibility = "visible";
+  // document.getElementById("directory").style.visibility = "visible";
+}
