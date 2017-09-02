@@ -1,0 +1,445 @@
+/* Large */
+body {
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	background: #f0f8ff;
+}
+
+h1 {
+	font-size: 50px;
+	margin-top: 80px;
+	font-family: 'Dosis', sans-serif;
+	margin-left, margin-right: 10px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+.parallax {
+	min-height: 200px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 70%;
+	margin: 100px 15%;
+}
+
+#music_parallax {
+	background-image: url("https://www.musikalessons.com/blog/wp-content/uploads/2016/02/music-beige.jpg?x55391");
+}
+
+#robotics_parallax {
+	background-image: url("http://i.huffpost.com/gen/2663310/images/o-ROBOTICS-facebook.jpg");
+}
+#middle_sun_parallax {
+	background-image: url("http://i.imgur.com/7zE86SE.jpg");
+}
+
+#gs_parallax {
+	background-image: url("http://i.imgur.com/j225upt.jpg");
+}
+
+#library_parallax {
+	background-image: url("http://www.leone-keeble.com/files/9413/4086/5083/3-CDA-Library.jpg");
+}
+#stem_parallax {
+	background-image: url("http://www.ibiobq.org/wp-content/uploads/2016/11/STEM-head.png");
+}
+
+.img_text {
+	padding: 100px 0;
+	margin: 30px;
+}
+
+.shadow {
+	background-color: rgba(0,0,0,.35);
+	-moz-box-shadow:    3px 3px 5px black;
+  -webkit-box-shadow: 3px 3px 5px black;
+  box-shadow:         3px 3px 5px black;
+	width: 200px;
+	margin-left: 0px;
+	height: 100%;
+}
+
+.shadow h2, .shadow h3 {
+	color: white;
+}
+
+h6,a  {
+	color: pink;
+	font-size: 24px;
+	text-decoration: none;
+	font-family: 'Dosis', sans-serif;
+}
+
+h6:hover, a:hover {
+	cursor: pointer;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+	color: hotpink;
+}
+
+.info {
+	float: right;
+	max-width: 680px;
+	font-size: 25px;
+	padding: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: black;
+	margin-bottom: 10px;
+	text-align: left;
+	max-height: 520px;
+}
+.info150 {
+	float: right;
+	max-width: 500px;
+	font-size: 22px;
+	padding: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: black;
+	margin-bottom: 10px;
+	text-align: left;
+	max-height: 520px;
+}
+.info300 {
+	float: right;
+	max-width: 300px;
+	font-size: 22px;
+	padding: 20px;
+	font-family: 'Raleway', sans-serif;
+	color: black;
+	margin-bottom: 10px;
+	text-align: left;
+	max-height: 520px;
+}
+
+.line {
+		width: 2px;
+		background-color: rgba(255,255,255,.75);
+		height: 40px;
+		float: left;
+		margin-top: 25px;
+		margin-left: 10px;
+		margin-right: 25px;
+		-moz-box-shadow:    1px 1px 5px rgba(255,255,255,.3);
+	  box-shadow:         1px 1px 5px rgba(255,255,255,.3);
+		-webkit-box-shadow: 1px 1px 5px rgba(255,255,255,.3);
+}
+
+.navigation {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: flex-start;
+	width: 97%;
+	height: 70px;
+	margin-top: -25px;
+	padding: 1.5%;
+	background: black;
+	-moz-box-shadow:    3px 3px 5px 3px rgba(0,0,0,.75);
+  box-shadow:         3px 3px 5px 3px rgba(0,0,0,.75);
+	-webkit-box-shadow: 3px 3px 5px 3px rgba(0,0,0,.75);
+}
+.navigation a {
+	color: rgba(255,255,255,.75);
+	margin-right: 40px;
+	font-size: 30px;
+	margin-top: 30px;
+}
+
+.navigation a:hover {
+	text-shadow: 4px 2px 2px rgba(255,255,255,.25);
+	cursor: pointer;
+	color: white;
+	font-size: 35px;
+	margin-top: 25px;
+}
+
+#bookList {
+	background: url("http://www.publicdomainpictures.net/pictures/40000/velka/open-book-1361527426SZ4.jpg");
+	min-height: 200px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#quotes {
+	background: url("http://www.publicdomainpictures.net/pictures/40000/velka/open-book-1361527426SZ4.jpg");
+	min-height: 200px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.content {
+	display: none;
+	cursor: auto;
+	width: 50%;
+	margin-left: 25%;
+	align-content: center;
+	padding: 20px;
+	margin-top: 100px;
+}
+.content div {
+	margin-left, margin-right: 50px;
+	padding: 20px;
+	background-color: rgba(240,248,255,.75);
+}
+
+#ml150 {
+	margin-left:150px;
+}
+#ml300 {
+	margin-left:300px;
+}
+
+.icons {
+	width: auto;
+	height: 60px;
+	margin-top: -60px;
+	visibility: hidden;
+}
+#oboe, #sax {
+	height: 80px;
+}
+.close_button {
+	display: none;
+	float: right;
+	background-color: rgba(0,0,0,.5);
+	color: white;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	border: 2px solid white;
+	font-size: 18px;
+	-moz-box-shadow:    2px 2px 2px rgba(0,0,0,.5);
+	box-shadow:         2px 2px 2px rgba(0,0,0,.5);
+	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	margin: 10px;
+}
+.close_button:hover {
+	background-color: rgba(0,0,0,.8);
+	-moz-box-shadow:    1px 1px 2px rgba(0,0,0,.25);
+	box-shadow:         1px 1px 2px rgba(0,0,0,.25);
+	-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+}
+
+.project {
+	padding: 20px;
+	animation: none;
+	width:50%;
+	margin-left: 24%;
+	transition: .75s ease;
+	border: none;
+	margin-top: 200px;
+	margin-bottom: 200px;
+	text-align: center;
+}
+.project:hover {
+	background-color: rgba(50,50,150,.1);
+	-webkit-animation: project_hover 4s infinite; /* Chrome, Safari, Opera */
+	animation: project_hover 4s infinite;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%; /* <TODO: Maybe commented out? Does that look right? /> */
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	border: 1px dashed black;
+	width: 35%;
+	margin-left: 32%;
+}
+
+@-webkit-keyframes color_change_animation {
+	0%	 {color: #FFFFFF; top:0px;}
+	25%	{color: #FBB2B2; top:0px;}
+	50%	{color:#F96363; top:200px;}
+	75%	{color: #FF0000; top:200px;}
+	90% {color: #FF8B8B; top:0px;}
+	100% {color: #FEC5C5;}
+}
+@keyframes color_change_animation_animation {
+	0%	 {color: #FFFFFF; top:0px;}
+	25%	{color: #FBB2B2; top:0px;}
+	50%	{color: #F96363; top:200px;}
+	75%	{color: #FF0000; top:200px;}
+	90% {color: #FF8B8B; top:0px;}
+	100% {color: #FEC5C5;}
+}
+
+@-webkit-keyframes project_hover {
+	from {color: red;}
+	to {color: black; background: white;}
+}
+@keyframes project_hover {
+	from {color: red;}
+	to {color: black; background: white;}
+}
+
+/*Overlay Image Text Effect*/
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+	margin-top: 30px;
+  display: block;
+  width: 120px;
+  height: auto;
+	opacity: 1;
+	transition: .5s ease;
+}
+.container:hover .image {
+	opacity: 0;
+}
+
+.overlay {
+	margin-left: -30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #F96363;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .75s ease;
+	border-bottom-right-radius: 20%;
+	border-top-right-radius: 20%;
+	border-left: 0 solid rgba(255,255,255,.0);
+}
+
+.container:hover .overlay {
+  width: 130%;
+	border-left: 5px solid  #DD6363;
+	-moz-box-shadow:    2px 2px 2px rgba(100,5,5,.75);
+	box-shadow:         2px 2px 2px rgba(100,5,5,.75);
+	-webkit-box-shadow: 2px 2px 2px rgba(100,5,5,.75);
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.text:hover {
+	cursor: pointer;
+	text-shadow: 3px 3px 5px rgba(0,0,0,.5);
+	color: pink;
+}
+
+/* Left Navigation Tab */
+#navTab {
+	height: 46px;
+	width: 50px;
+	margin-top: 150px;
+	border: 2px solid rgba(0,0,0,.5);
+	margin-left: -45px;
+	float: left;
+	position: fixed;
+	display: block;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	color: rgba(0,0,0,.5);
+	font-size: 25px;
+	padding-left: 5px;
+	color: white;
+	background: black;
+	-moz-box-shadow:    1px 3px 3px rgba(0,0,0,.5);
+	box-shadow:         1px 3px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 1px 3px 3px rgba(0,0,0,.5);
+	font-size: 35px;
+	transition: .5s ease;
+	z-index: 3;
+}
+/*#navTab:hover {
+	margin-left: -8px;
+	cursor: pointer;
+}*/
+#leftNavBar {
+	height: 85%;
+	width: 105px;
+	margin-top: 60px;
+	border: 2px solid rgba(0,0,0,.5);
+	margin-left: -135px;
+	float: left;
+	position: fixed;
+	display: block;
+	font-size: 40px;
+	padding: 5px;
+	padding-left: 15px;
+	color: white;
+	background: black;
+	-moz-box-shadow:    1px 2px 1px rgba(0,0,0,.75);
+  box-shadow:         1px 2px 1px rgba(0,0,0,.75);
+	-webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.75);
+	transition: .5s ease;
+	z-index: 2;
+	text-align: left;
+}
+#leftNavBar a {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 20px;
+	color: white;
+	display: block;
+	font-family: 'Dosis', sans-serif;
+}
+#leftNavBar a:hover {
+	color: white;
+	margin-left: 5px;
+}
+#leftNavBar p {
+	font-size: 10px;
+	color: rgba(255,255,255,.75);
+	font-family: 'Dosis', sans-serif;
+}
+
+.click_icon:hover {
+	cursor: pointer;
+	width: 100px;
+	height: 100px;
+}
+/* Medium screens */
+@media all and (max-width: 1300px) {
+	.shadow {
+		margin-left: 0px;
+		max-height: 450px;
+	}
+	#ml150 {
+		margin-left:50px;
+	}
+	#ml300 {
+		margin-left:100px;
+	}
+	.info, .info150,.info300 {
+		display: none
+	}
+	.project:hover {
+		background-color: rgba(50,50,150,.1);
+		-webkit-animation: project_hover 4s infinite; /* Chrome, Safari, Opera */
+		animation: project_hover 4s infinite;
+		border-radius: 0;
+		margin-left: 30%;
+		width: 50%;
+	}
+}
+
+/* Small screens */
+@media all and (max-width: 800px) {
+	#ml150 {
+		margin-left:0px;
+	}
+	#ml300 {
+		margin-left:0px;
+	}
+	.info, .info150,.info300 {
+		display: none
+	}
+}
