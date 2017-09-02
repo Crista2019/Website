@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>______</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<script src="lib/js/index.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Raleway:500" rel="stylesheet">
+</head>
+<body>
+
+	<div onmouseover="navTabMove()" onmouseout="navTabMoveBack()" onmousedown="toggleNavBar()" id="navTab">></div>
+	<div id="leftNavBar">
+		<br>
+		<p>LOCATION</p>
+		<a href=#>Top</a>
+		<a href=#999>Bottom</a>
+		<br>
+		<p>EXTRACURRICULARS<p>
+		<a href=#1>Music</a>
+		<a href=#2>Academics</a>
+		<a href=#3>Library</a>
+		<a href=#4>Girlscouts</a>
+		<a href=#5>Robotics</a>
+		<br>
+		<!-- <p>BROWSE</p>
+		<a onmousedown="jumpToRandSpot()" href=#>Random</a> -->
+
+	</div>
+
+	<div class="navigation">
+		<div class="line"></div>
+		<a href="">Home</a>
+		<div class="line"></div>
+		<a href="https://girlswhocode-csm.symplicity.com/profiles/crista.falk">Resume</a>
+		<div class="line"></div>
+		<a href="https://github.com/Crista2019">Github</a>
+	</div>
+
+	<h1>Crista Falk and etc.</h1>
+
+	<div class="img_text">
+		<h2>Hey-o</h2>
+		<img class="click_icon" onclick="colorSchemeShift()" class="icon" src="https://png.icons8.com/rgb-circle-1/color/96">
+		<h3>Click to change the color scheme.</h3>
+		<h6 onmousedown="resetColorScheme()">Reset</h6>
+	</div>
+
+	<div id="middle_sun_parallax" class="parallax">
+		<div class="shadow">
+			<div class="img_text">
+				<img class="icons" id="idaho" src="http://www.clker.com/cliparts/c/q/L/7/k/F/idaho-hi.png"/>
+				<h2 id="sarcasticColorChange" >Idaho.</h2>
+				<h3>A state in which I live.</h3>
+				<div class="container">
+				  <img src="http://files.jb51.net/file_images/article/201303/wenhao/045.png" class="image">
+				  <div class="overlay">
+				    <div class="text">
+							<p onmouseover="showIdaho(); colorChange()" onmouseout="hideIdaho(); normalColor()">For Reference.</p>
+						</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="img_text">
+		<h2>Do you like words?</h2>
+		<h3>I know the best words.</h3>
+		<div class="content" id="quotes">
+			<div>
+				<p>"In the beginning the Universe was created. <br>This has made a lot of people very angry and been widely regarded as a bad move."</p>
+      	<h4><i>- Douglas Adams</i></h4>
+			</div>
+      <br>
+			<div>
+      	<p>"Simplicity is prerequisite for reliability."</p>
+      	<h4><i>- Edsger W. Dijkstra</i></h4>
+			</div>
+      <br>
+			<div>
+      	<p>"Humans are allergic to change. <br>They love to say, 'We've always done it this way.'<br>I try to fight that. <br>That's why I have a clock on my wall that runs counter-clockwise."</p>
+      	<h4><i>- Grace Hopper</i></h4>
+			</div>
+		</div>
+		<h6 onmousedown="favQuotes()" id="quotesId">Check these quotes.</h6>
+	</div>
+
+	<div id="1"></div>
+	<div id="music_parallax" class="parallax">
+		<div class="info150" id="musicInfoDiv">
+			<button class="close_button" id="musicCloseBtn" onclick="removeInstrumentInfo()">x</button>
+			<p id="musicInfo">
+			</p>
+		</div>
+		<div id="ml150" class="shadow">
+			<div class="img_text">
+				<img class="icons" id="oboe" src="http://images.clipartpanda.com/oboe-clipart-gerald_g_oboe_2-999px.png"/>
+				<img class="icons" id="sax" src="http://images.clipartpanda.com/saxophone-clip-art-saxophone_02_Vector_Clipart.png"/>
+				<h2>Music</h2>
+				<h3>I play the oboe and saxophone.</h3>
+				<div class="container">
+				  <img src="http://files.jb51.net/file_images/article/201303/wenhao/045.png" class="image">
+				  <div class="overlay">
+				    <div class="text">
+							<p onmouseover="showInstruments()" onmousedown="showInstrumentInfo()" onmouseout="hideInstruments()">Find out<br>some more<br>about that.</p>
+						</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="project">
+			<div class=img_text>
+			<h2>2016 Independent Study</h2>
+			<a href="https://github.com/Crista2019/Independent-Study-2015-2016">Principles & Applications of Electronics</a>
+			<h3>What to look for: Videos of Arduino Circuit Boards</h3>
+			<h4><i>Aka: ALL the diodes</i></h4>
+		</div>
+	</div>
+
+	<div id="2"></div>
+	<div id="stem_parallax" class="parallax">
+		<div class="info300" id="STEMInfoDiv">
+			<button class="close_button" id="STEMCloseBtn" onclick="removeSTEMInfo()">x</button>
+			<p id="STEMInfo">
+			</p>
+		</div>
+		<div id="ml300" class="shadow">
+			<div class="img_text">
+				<h2>Promoting Stem</h2>
+				<h3>in the Community</h3>
+				<div class="container">
+				  <img src="http://files.jb51.net/file_images/article/201303/wenhao/045.png" class="image">
+				  <div class="overlay">
+				    <div class="text">
+							<p onmousedown="showSTEMInfo()">Science<br>Tech<br>Engineering<br>Math.</p>
+						</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="project">
+			<div class=img_text>
+			<h2>2017 Independent Study</h2>
+			<a href="https://github.com/Crista2019/Independent-Study-2016-2017">Data Structures and Algorithms</a>
+			<h3>What to look for: "Synthesis Project"</h3>
+			<h4><i>Aka: Dungeons and Dragons data manipulation, but even cooler than it sounds</i></h4>
+		</div>
+	</div>
+
+	<div id="3"></div>
+	<div id="library_parallax" class="parallax">
+		<div class="info150" id="libraryInfoDiv">
+			<button class="close_button" id="libraryCloseBtn" onclick="removeLibraryInfo()">x</button>
+			<p style="font-size: 25px" id="libraryInfo">
+			</p>
+		</div>
+		<div id="ml150" class="shadow">
+			<div class="img_text">
+				<h2>Volunteer Work</h2>
+				<h3>Kafke-esque, <br>but fun</h3>
+				<div class="container">
+				  <img src="http://files.jb51.net/file_images/article/201303/wenhao/045.png" class="image">
+				  <div class="overlay">
+				    <div class="text">
+							<p onmousedown="showLibraryInfo()">Support<br>your<br>local library!</p>
+						</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="img_text">
+		<h2>Hey, my fellow literate individual.</h2>
+		<h3>Here are some of my favorite books.</h3>
+		<div class="content" id="bookList">
+			<ul style="margin-right: 25px; text-align: center; list-style: none; font-size: 20px">
+				<div>
+					<li><p><u>Hitchhiker's Guide to the Galaxy</u> <br> ... by Douglas Adams</p></li>
+				</div>
+				<br>
+
+				<div>
+					<li><p><u>To Kill a Mockingbird</u> <br> ... by Harper Lee</p></li>
+				</div>
+				<br>
+
+				<div>
+					<li><p><u>The Princess Bride</u> <br> ... by William Goldman</p></li>
+				</div>
+				<br>
+
+				<div>
+					<li><p><u>The Things They Carried</u> <br> ... by Tim O'Brien</p></li>
+				</div>
+				<br>
+
+				<div>
+					<li><p><u>Slaughter House-Five</u> <br> ... by Kurt Vonnegut</p></li>
+				</div>
+				<br>
+
+				<div>
+					<li><p><u>The Catcher in the Rye</u> <br> ... by J.D. Salinger</p></li>
+				</div>
+				<br>
+
+				<div>
+        	<li><p><u>The C Programming Language</u> <br> ... by Kernighan and Ritchie<h5>(Ok, ok. So that last one's a joke.)<h5></p></li>
+				</div>
+      </ul>
+		</div>
+		<h6 onmousedown="favBooks()" id="books">Click now.</h6>
+	</div>
+
+	<div id="4"></div>
+	<div id="gs_parallax" class="parallax">
+		<div class="info" id="gsInfoDiv">
+			<button class="close_button" id="gsCloseBtn" onclick="removeGsInfo()">x</button>
+			<p style="font-size: 25px" id="gsInfo">
+			</p>
+		</div>
+		<div class="shadow">
+			<div class="img_text">
+				<h2>Girlscouts</h2>
+				<h3>Live by<br>the Girlscout<br>Way.</h3>
+				<div class="container">
+				  <img src="http://files.jb51.net/file_images/article/201303/wenhao/045.png" class="image">
+				  <div class="overlay">
+				    <div class="text">
+							<p onmousedown="showGsInfo()">More than<br>Cookie <br>Peddlers.</p>
+						</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="project">
+			<div class=img_text>
+			<h2>Honors Chem Essay</h2>
+			<a href="file:/C:/Projects/Aesthetic/chem_essay/chem_paper.html">The Chemistry & Physics of Computers</a>
+			<h3>An awesome paper about the present and future microtech neccesary to adapt to a rapidly evolving world of computation</h3>
+			<h4><i>Aka: Moore and his WACKY law</i></h4>
+		</div>
+	</div>
+
+	<div id="5"></div>
+	<div id="robotics_parallax" class="parallax">
+		<div class="info150" id="roboticsInfoDiv">
+			<button class="close_button" id="roboticsCloseBtn" onclick="removeRoboticsInfo()">x</button>
+			<p style="font-size: 25px" id="roboticsInfo">
+			</p>
+		</div>
+		<div id="ml150" class="shadow">
+			<div class="img_text">
+				<h2>Robotics</h2>
+				<h3>Programming Team <br>for Long.MAX_VALUE</h3>
+				<div class="container">
+				  <img src="http://files.jb51.net/file_images/article/201303/wenhao/045.png" class="image">
+				  <div class="overlay">
+				    <div class="text">
+							<p onmousedown="showRoboticsInfo()">00110011<br>00110001<br>00110100<br>00110101</p>
+						</div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- External Github Project Link
+	<div class="project">
+			<div class=img_text>
+			<h2>Title</h2>
+			<a href="https://github.com/Crista2019/">Link</a>
+			<h3>What to look for: "____"</h3>
+			<h4><i>Aka: Witty Pun, and or Jovial Commennt</i></h4>
+		</div>
+	</div> -->
+
+<!-- Internal Text/List Feature
+	<div class="img_text">
+		<h2>Thing</h2>
+		<h3>All the words.</h3>
+		<h6>Click now.</h6>
+	</div> -->
+
+<!-- PARALLAX
+	<div id="_parallax" class="parallax">
+			<div id="ml300" class="shadow">
+				<div class="img_text">
+					<h2>Trees.</h2>
+					<h3>Wooooowee.</h3>
+					<h6>Get it girl.</h6>
+			</div>
+		</div>
+	</div> -->
+
+	<p>Sept. 1, 2017</p>
+	<p id="999">&copy; Crista Falk</p>
+</body>
+</html>
