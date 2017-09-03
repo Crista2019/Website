@@ -39,10 +39,10 @@ function favQuotes() {
 
 // Idaho Parallax
 function showIdaho() {
-  document.getElementById("idaho").style.visibility = "visible";
+  document.getElementById("idaho").style.opacity = "1";
 }
 function hideIdaho() {
-  document.getElementById("idaho").style.visibility = "hidden";
+  document.getElementById("idaho").style.opacity = "0";
 }
 // Text Color Change Animation
 function colorChange() {
