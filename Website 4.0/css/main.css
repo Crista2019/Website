@@ -82,38 +82,25 @@ h6:hover, a:hover {
 	color: hotpink;
 }
 
-.info {
-	float: right;
-	max-width: 680px;
-	font-size: 25px;
+.info, .info150, .info300 {
 	padding: 20px;
 	font-family: 'Raleway', sans-serif;
 	color: black;
 	margin-bottom: 10px;
 	text-align: left;
-	max-height: 520px;
+	max-height: 510px;
+	overflow: auto;
+	float: right;
+	font-size: 22px;
+}
+.info {
+	max-width: 700px;
 }
 .info150 {
-	float: right;
-	max-width: 500px;
-	font-size: 22px;
-	padding: 20px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	margin-bottom: 10px;
-	text-align: left;
-	max-height: 520px;
+	max-width: 550px;
 }
 .info300 {
-	float: right;
-	max-width: 300px;
-	font-size: 22px;
-	padding: 20px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-	margin-bottom: 10px;
-	text-align: left;
-	max-height: 520px;
+	max-width: 400px;
 }
 
 .line {
@@ -208,14 +195,13 @@ h6:hover, a:hover {
 	background-color: rgba(0,0,0,.5);
 	color: white;
 	border-radius: 50%;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	border: 2px solid white;
 	font-size: 18px;
 	-moz-box-shadow:    2px 2px 2px rgba(0,0,0,.5);
 	box-shadow:         2px 2px 2px rgba(0,0,0,.5);
 	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,.5);
-	margin: 10px;
 }
 .close_button:hover {
 	background-color: rgba(0,0,0,.8);
@@ -363,8 +349,8 @@ h6:hover, a:hover {
 	cursor: pointer;
 }*/
 #leftNavBar {
-	height: 85%;
 	width: 105px;
+	height: auto;
 	margin-top: 60px;
 	border: 2px solid rgba(0,0,0,.5);
 	margin-left: -135px;
@@ -405,6 +391,7 @@ h6:hover, a:hover {
 	cursor: pointer;
 	width: 100px;
 	height: 100px;
+	/* <TODO: rotate in a neat-o css-ey fashion/> */
 }
 /* Medium screens */
 @media all and (max-width: 1300px) {
@@ -418,9 +405,7 @@ h6:hover, a:hover {
 	#ml300 {
 		margin-left:100px;
 	}
-	.info, .info150,.info300 {
-		display: none
-	}
+
 	.project:hover {
 		background-color: rgba(50,50,150,.1);
 		-webkit-animation: project_hover 4s infinite; /* Chrome, Safari, Opera */
@@ -429,6 +414,29 @@ h6:hover, a:hover {
 		margin-left: 30%;
 		width: 50%;
 	}
+	#leftNavBar {
+		height: 610px;
+	}
+	.info, .info150, .info300 {
+		font-size: 20px;
+		padding: 20px;
+		font-family: 'Raleway', sans-serif;
+		color: black;
+		margin-bottom: 10px;
+		text-align: left;
+		max-height: 410px;
+		float: right;
+	}
+	.info {
+		max-width: 440px;
+	}
+	.info150 {
+		max-width: 390px;
+	}
+	.info300 {
+		max-width: 340px;
+	}
+
 }
 
 /* Small screens */
@@ -440,6 +448,6 @@ h6:hover, a:hover {
 		margin-left:0px;
 	}
 	.info, .info150,.info300 {
-		display: none
+		/*display: none*/
 	}
 }
