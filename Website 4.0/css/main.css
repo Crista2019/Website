@@ -5,7 +5,7 @@ body {
 	text-align: center;
 	width: 100%;
 	font-family: 'Raleway', sans-serif;
-	background: #f0f8ff;
+	background: #bababa;
 }
 
 h1 {
@@ -388,10 +388,17 @@ h6:hover, a:hover {
 	font-family: 'Dosis', sans-serif;
 }
 
+.click_icon {
+	opacity: 0.8;
+	height: 5%;
+	width: 5%;
+}
+
 .click_icon:hover {
 	cursor: pointer;
-	width: 100px;
-	height: 100px;
+	opacity: 1;
+	height: 80px;
+	width: 80px;
 	/* <TODO: rotate in a neat-o css-ey fashion/> */
 }
 /* Medium screens */
