@@ -5,7 +5,7 @@ body {
 	text-align: center;
 	width: 100%;
 	font-family: 'Raleway', sans-serif;
-	background: #bababa;
+	background: #aaaaaa;
 }
 
 h1 {
@@ -74,6 +74,37 @@ h6,a  {
 	font-size: 24px;
 	text-decoration: none;
 	font-family: 'Dosis', sans-serif;
+}
+
+.thingsLink {
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+	color: rgba(0,0,0,.5);
+	font-size: 35px;
+	line-height: 40px;
+}
+.thingsLink:hover {
+	line-height: 50px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	cursor: pointer;
+	text-shadow: 1px 1px 1px rgba(0,0,0,1);
+	color: black;
+	background-color: rgba(255,100,180,0.15);
+}
+
+.socialMedia {
+	height: 80px;
+	margin-right: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	position: sticky;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 h6:hover, a:hover {
