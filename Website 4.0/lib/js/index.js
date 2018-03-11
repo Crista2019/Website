@@ -1,3 +1,11 @@
+//Scroll Animation API
+window.sr = ScrollReveal({ duration: 2000 });
+sr.reveal('.parallax');
+sr.reveal('.img_text');
+sr.reveal('.content');
+sr.reveal('.project');
+sr.reveal(document.getElementById('leftNavBar'));
+
 // TOGGLE FAVORITE BOOK LIST
 function showBooks() {
   document.getElementById("bookList").style.display = "block";
@@ -68,7 +76,7 @@ function hideInstruments() {
   document.getElementById("sax").style.visibility = "hidden";
 }
 function showInstrumentInfo() {
-  document.getElementById("musicInfo").innerHTML = "I have been making music since the age of ten. Initially, I participated in my elementary school's orchestra program until I discovered my true passion lay in playing woodwinds. My instruents of choice today are the alto and tenor saxophone as well as the oboe and English Horn. I have participated in nearly every musical opportunity that my community has to offer: school programs such as concert band, symphonic band, STOMP percussion/perforance arts, pep band, marching band, advanced 0-hour jazz band, and the LCHS jazz combo, as well as external programs such as Coeur d'Alene Youth Orchestra, the 'Mataban Jazz Experience,' and the Perfection-Nots Marching Band. From Handel to Sousa to the Count Basie Big Band, music has always been and will continue to remain a significant influence on my life."
+  document.getElementById("musicInfo").innerHTML = "I have been making music since the age of ten. Initially, I participated in my elementary school's orchestra program until I discovered my true passion lay in playing woodwinds. My instruents of choice today are the alto and tenor saxophone as well as the oboe and English Horn. I have participated in nearly every musical opportunity that my community has to offer: school programs such as concert band, symphonic band, STOMP percussion/perforance arts, pep band, marching band, advanced 0-hour jazz band, and the LCHS jazz combo, as well as external programs such as Coeur d'Alene Youth Orchestra, the 'Mataban Jazz Experience,' Panhandle Symphony, and the Perfection-Nots Marching Band. From Handel to Sousa to the Count Basie Big Band, music has always been and will continue to remain a significant influence on my life."
   document.getElementById("musicInfoDiv").style.background = "rgba(240,248,255,.92)";
   document.getElementById("musicCloseBtn").style.display = "block";
 }
@@ -181,7 +189,59 @@ function colorSchemeShift() {
   document.body.style.backgroundColor = randColor;
 }
 function resetColorScheme() {
-  document.body.style.backgroundColor = "#f0f8ff";
+  document.body.style.backgroundColor = "#aaaaaa";
+}
+
+// THINGS I DO PAGE
+function showPast() {
+  document.getElementById("past").style.display = "block";
+  pastShown = true;
+  document.getElementById("pastId").innerHTML = "Back &#8604;";
+}
+
+function hidePast() {
+  document.getElementById('past').style.display = "none";
+  pastShown = false;
+  document.getElementById("pastId").innerHTML = "Some great opportunities I have shared in:";
+}
+
+var pastShown = false;
+function past() {
+  pastShown ? hidePast() : showPast();
+}
+
+function showPresent() {
+  document.getElementById("present").style.display = "block";
+  presentShown = true;
+  document.getElementById("presentId").innerHTML = "Back &#8604;";
+}
+
+function hidePresent() {
+  document.getElementById('present').style.display = "none";
+  presentShown = false;
+  document.getElementById("presentId").innerHTML = "What am I doing now?";
+}
+
+var presentShown = false;
+function present() {
+  presentShown ? hidePresent() : showPresent();
+}
+
+function showFuture() {
+  document.getElementById("future").style.display = "block";
+  futureShown = true;
+  document.getElementById("futureId").innerHTML = "Back &#8604;";
+}
+
+function hideFuture() {
+  document.getElementById('future').style.display = "none";
+  futureShown = false;
+  document.getElementById("futureId").innerHTML = "My plans for the future.";
+}
+
+var futureShown = false;
+function future() {
+  futureShown ? hideFuture() : showFuture();
 }
 
 // GENERAL STRUCTURE OF TOGGLE CONTENT
