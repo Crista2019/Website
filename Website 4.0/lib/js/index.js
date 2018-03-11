@@ -88,7 +88,7 @@ function removeInstrumentInfo() {
 
 //Stem Parallax
 function showSTEMInfo() {
-  document.getElementById("STEMInfo").innerHTML = "As a member of the LCHS Scholastic Team, a mentor for Gizmo-CDA's \"Girls Who Code\" club and other coding events, a software engineering intern at ExtraTech Systems (initially starting through the University of Idaho's Dign'IT Tech Internship Program), a two year participant in UofI's \"Women in Math and Science\" event, and a lifelong lover of all things math and science, I work to promote STEM wherever possible. Plus, I absolutely adore XKCD comics.";
+  document.getElementById("STEMInfo").innerHTML = "As a member of the LCHS Scholastic Team, a mentor for Gizmo-CDA's \"Girls Who Code\" club and other coding events, a software engineering intern at ExtraTech Systems (initially starting through the University of Idaho's Dign'IT Tech Internship Program), a two year participant in UofI's \"Women in Math and Science\" event, the Idaho Affiliate for the NCWIT Aspirations in Computing Award, and a lifelong lover of all things math and science, I work to promote STEM wherever possible. Plus, I absolutely adore XKCD comics.";
   document.getElementById("STEMInfoDiv").style.background = "rgba(240,248,255,.92)";
   document.getElementById("STEMCloseBtn").style.display = "block";
 }
