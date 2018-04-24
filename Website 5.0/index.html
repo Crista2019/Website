@@ -21,6 +21,27 @@
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>-->
       <script src="js/html5shiv.js"></script>
+      <style>
+      .dropdown {
+        position: relative;
+        margin-bottom: 50px;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: inherit;
+        background-color: #f9f9f9;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    </style>
       <script src="js/respond.min.js"></script>
     <!--[endif]-->
  </head>
@@ -29,6 +50,7 @@
      <div class="container">
        <div class="row centered">
          <div class="col-lg-12 animated fadeInUp">
+           <img style="width: 300px" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/27973837_2062230274019945_8583885449370869022_n.jpg?_nc_cat=0&oh=82faf184f8cd2fe92e1d5d7397fcce6a&oe=5B6D25D4" />
            <h1>Crista Falk</h1>
            <h3>Musician, Programmer, Lifelong Learner |
             <a href="mailto:cristafalk@gmail.com">cristafalk@gmail.com</a>
@@ -61,74 +83,93 @@
 	<div class="container desc">
 		<div class="row">
 
+      <div class="container desc">
+    		<div class="row">
+    				<div class="row centered">
+    					<h3>PROJECTS</h3>
+    				</div><br/>
+
+            <div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" style="text-transform:none" class="col-lg-3">
+    					<p class="tight"><sm>FIRST Robotics Code (in Python and Java)</sm>
+              </br><a href="https://github.com/gizmo-cda/TeraViks-3145">TERAVIKS ROBOTICS</a><br/>
+    					</p>
+    					<p style="text-transform:uppercase"><more><sm>An ongoing repo of the code I write for my FIRST robotics team's competition bot</sm></more></p>
+    				</div>
+    				<div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" class="col-lg-3">
+    					<p><sm>2016 Independent Study</sm><br/>
+    						<a href="https://github.com/Crista2019/Independent-Study-2015-2016">Principles & Applications of Electronics</a><br/>
+    					</p>
+    				</div>
+    				<div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" class="col-lg-3">
+              <p><sm>2017 Independent Study</sm><br/>
+    						<a href="https://github.com/Crista2019/Independent-Study-2016-2017">Data Structures and Algorithms</a><br/>
+    					</p>
+    				</div>
+    				<div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" class="col-lg-3">
+              <p><sm>Additional Projects to Come...</sm><br/>
+    						<a href="https://github.com/Crista2019">My Github Repo</a><br/>
+    					</p>
+    				</div>
+    		</div><!--/.row -->
+    		<br>
+    	</div><!--/.container -->
 
 				<div class="row centered">
 					<h3>COMMUNITY INVOLVEMENT</h3>
 				</div><br/>
-				<div class="col-lg-6">
-				  <p><t>2015</t></p>
+				<div class="dropdown">
+				  <span><p style="font-size:80px" ><t>2015</t></p></span>
+          <div class="dropdown-content">
           <p><t><a href="http://www.cdaid.org/Home/ShowPage?path=2860">Arbor Day</a></t><br/>
 						<i>Volunteering with my Girl Scout troop at the annual Arbor Day Celebration.</i>
 					</p>
-        </div>
-				<div class="col-lg-6">
 					<p><t><a href="http://www.cdapress.com/archive/article-2b70c2e5-42f1-5e41-9fa9-8b2be9a01938.html">Cybersecurity Camp</a></t><br/>
             <i>Participating in the AFA CyberCamp Program.</i>
-          </p><br/>
-				</div>
-				<div class="col-lg-6">
-				  <p><t>2016</t></p>
+          </p>
+				</div> </div></br>
+        <div class="dropdown">
+          <span><p style="font-size:80px"><t>2017</t></p></span>
+          <div class="dropdown-content">
+          <p><t><a href="http://www.cdapress.com/article/20170220/ARTICLE/170229997">Academic Honors #1</a></t><br/>
+            <i>Sophomore Honor Roll.</i>
+          </p>
+            <p><t><a href="https://www.uidaho.edu/cda/news-events/featured-stories/dignit-interns">DigN'IT Tech Internship</a></t><br/>
+              <i>Interning at Extratech through University of Idaho's DigN'IT Program.</i>
+            </p>
+          </div>
+				</div> </br>
+				<div class="dropdown">
+        <span><p style="font-size:80px"><t>2016</t></p></span>
+        <div class="dropdown-content">
           <p><t><a href="https://www.facebook.com/VFWinCDA/posts/652867521483096">Voice of Democracy</a></t><br/>
             <i>Voice of Democracy audio-essay contest.</i>
           </p>
-				</div>
-        <div class="col-lg-6">
           <p><t><a href="https://www.inlander.com/spokane/thinkers-and-tinkers/Content?oid=2691020">Gizmo</a></t><br/>
             <i>Programming for FRC team #3145.</i>
           </p>
-				</div>
-        <div class="col-lg-6">
           <p><t><a href="http://www.cdapress.com/archive/article-adc185ea-bea6-11e6-a40c-4b4ae4c9349b.html">Hour Of Code</a></t><br/>
           <i>Volunteer mentor for the Hour of Code event.</i>
           </p>
-				</div> <br/>
-				<div class="col-lg-6">
-				  <p><t>2017</t></p>
-          <p><t><a href="http://www.cdapress.com/article/20170220/ARTICLE/170229997">Academic Honors #1</a></t><br/>
-            <i>Sophomore Honor Roll.</i>
-        </p>
-				</div>
-        <div class="col-lg-6">
-          <p><t><a href="https://www.uidaho.edu/cda/news-events/featured-stories/dignit-interns">DigN'IT Tech Internship</a></t><br/>
-            <i>Interning at Extratech through University of Idaho's DigN'IT Program.</i>
-          </p><br/>
-				</div>
-        <div class="col-lg-6">
-          <p><t>2018</t></p>
+				</div> </div></br>
+        <div class ="dropdown">
+          <span><p style="font-size:80px"><t>2018</t></p></span>
+          <div class="dropdown-content">
           <p><t><a href="http://www.cdapress.com/local_news/20171026/a_colorful_lesson_in_french">Elementary School French</a></t><br/>
             <i>Teaching French to Skyway Elementary schoolers avec mon cours de français au niveau collégial.</i>
           </p>
-				</div>
-        <div class="col-lg-6">
-          <p><t><a href="http://www.cdapress.com/local_news/20171219/putting_a_pen_to_the_past">Kootenai County History</a></t>
+          <p><t><a href="http://www.cdapress.com/local_news/20171219/putting_a_pen_to_the_past">Kootenai County History</a></t></br>
             <i>Historic Preservation Commision Essay Contest.</i>
           </p>
-				</div>
-        <div class="col-lg-6">
           <p><t><a href="http://www.cdapress.com/local_news/20180223/lake_city_high_school_honor_roll">Academic Honors #2</a></t><br/>
             <i>Junior Honor Roll.</i>
           </p>
-				</div>
-        <div class="col-lg-6">
           <p><t><a href="https://www.aspirations.org/blog/nearly-four-hundred-us-high-school-women-are-recognized-technological-achievements">NCWIT Aspirations in Computing</a></t><br/>
             <i>National honorable mention and Idaho Affiliate award winner.</i>
           </p>
-				</div>
-	<div class="col-lg-6">
           <p><t><a href="http://www.cdapress.com/local_news/20180405/first_boise_then_the_world">FRC Championships</a></t><br/>
             <i>My robotics team, on its way to the FIRST World Championships.</i>
           </p><br/>
-				</div>
+				</div> </div>
 
 		</div><!--/.row -->
 		<br>
@@ -165,37 +206,48 @@
 		<br>
 		<hr>
 	</div>-->
+  <div class="container desc">
+    <div class="row">
+        <div class="row centered">
+          <h3>AWARDS</h3>
+        </div><br/>
 
-	<div class="container desc">
-		<div class="row">
-				<div class="row centered">
-					<h3>PROJECTS</h3>
-				</div><br/>
-
-        <div style="text-transform:none" class="col-lg-3">
-					<p class="tight"><t><a href="https://github.com/gizmo-cda/TeraViks-3145">TERAVIKS ROBOTICS</a></t><br/>
-						FIRST Robotics Code (in Python and Java)
-					</p>
-					<p style="text-transform:uppercase"><more>An ongoing repo of the code I write for my FIRST robotics team's competition bot</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2016 Independent Study</sm><br/>
-						<a href="https://github.com/Crista2019/Independent-Study-2015-2016">Principles & Applications of Electronics</a><br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-          <p><sm>2017 Independent Study</sm><br/>
-						<a href="https://github.com/Crista2019/Independent-Study-2016-2017">Data Structures and Algorithms</a><br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-          <p><sm>Additional Projects to Come...</sm><br/>
-						<a href="https://github.com/Crista2019">My Github Repo</a><br/>
-					</p>
-				</div>
-		</div><!--/.row -->
-		<br>
-	</div><!--/.container -->
+        <div>
+          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 20px; margin-left: 150px">
+          <p><t>Girl Scouts: President</t><br/>
+            <i>GS Bronze Award</i><br/>
+            <i>GS Silver Award</i><br/>
+            <i>Working Toward Gold!</i><br/>
+          </p> </div>
+          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 20px; margin-left: 150px">
+          <p><t>Band Program: Secretary</t><br/>
+            <i>Freshman, Sophomore, and Junior Year Letterer</i><br/>
+            <i>Outstanding Freshman Award; Outstanding Junior Award</i><br/>
+            <i>District Oboe Solo Winner 2017 (Solo and Ensemble)</i></br>
+            <i>District Woodwind Quartet Winner 2018 (Solo and Ensemble)</i><br/>
+          </p> </div>
+          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 20px; margin-left: 150px">
+          <p><t>Scholastic Team: Varsity Captain</t><br/>
+            <i>Freshman, Sophomore, Junior Letterer</i><br/>
+          </p> </div>
+          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 20px; margin-left: 150px">
+          <p><t>Robotics: Lead Programmer</t><br/>
+            <i>2017- Spirit of the Team Award (individual)</i><br/>
+            <i>2018- Idaho Regional Winning Alliance (team)</i><br/>
+          </p> </div>
+          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 20px; margin-left: 150px">
+          <p><t>Personal</t><br/>
+            <i><strong>2016-</strong> Voice of Democracy - VFW Audio Essay: 1st Place Local; 3rd Place District</i><br/>
+            <i><strong>2017-</strong> Recipient of "Gold Key" in Idaho Scholastic Writing Awards for Short Story submission</i><br/>
+            <i><strong>2017-</strong> Kootenai Historic Preservation Commission Essay Contest First Honorable Mention</i><br/>
+            <i><strong>2018-</strong> National Honorable Mention of the NCWIT Award for Aspirations in Computing</i><br/>
+            <i><strong>2018-</strong> Idaho Affiliate Award Winner of the 2018 NCWIT Award for Aspirations in Computing</i><br/>
+            <i><strong>2018-</strong> Quest Bridge College Prep Scholar</i><br/>
+          </p> </div>
+        </div>
+    </div><!--/.row -->
+    <br>
+  </div><!--/.container -->
 
 
 <section id="contact" name="contact"></section>
