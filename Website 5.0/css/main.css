@@ -22,31 +22,31 @@ body {
 	color: rgba(0,0,0,.5);
 	font-size: 25px;
 	padding-left: 10px;
-	background: rgba(54,117,136,0.75);
+	background: rgba(54,117,136,.6);
 	-moz-box-shadow:    1px 3px 3px rgba(0,0,0,.5);
 	box-shadow:         1px 3px 3px rgba(0,0,0,.5);
 	-webkit-box-shadow: 1px 3px 3px rgba(0,0,0,.5);
 	font-size: 35px;
-	transition: .4s ease;
+	transition: .3s ease;
 	z-index: 3;
 }
 #leftNavBar {
-	width: 150px;
+	width: 140px;
 	height: auto;
 	margin-top: 20px;
 	margin-left: -220px;
 	float: left;
 	position: fixed;
 	display: block;
-	font-size: 40px;
+	font-size: 30px;
 	padding: 5px;
 	padding-left: 25px;
 	color: black;
-	background: rgba(54,117,136,0.9);
+	background: rgba(54,117,136,.6);
 	-moz-box-shadow:    1px 2px 1px rgba(0,0,0,.75);
   box-shadow:         1px 2px 1px rgba(0,0,0,.75);
 	-webkit-box-shadow: 1px 2px 1px rgba(0,0,0,.75);
-	transition: .5s ease;
+	transition: .3s ease;
 	z-index: 2;
 	text-align: left;
 }
