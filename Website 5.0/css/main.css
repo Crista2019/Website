@@ -1,3 +1,4 @@
+
 body {
   background-color: #f2f2f2;
   font-family: 'Lora', serif;
@@ -32,7 +33,6 @@ body {
 }
 #leftNavBar {
 	width: 140px;
-	height: auto;
 	margin-top: 20px;
 	margin-left: -220px;
 	float: left;
@@ -53,12 +53,12 @@ body {
 #leftNavBar a {
 	margin-top: 30px;
 	margin-bottom: 30px;
-	font-size: 20px;
+	font-size: 15px;
 	color: white;
 	display: block;
 }
 #leftNavBar a:hover {
-	margin-left: 10px;
+	margin-left: 5px;
 }
 #leftNavBar p {
 	font-size: 10px;
