@@ -15,6 +15,9 @@
     <!-- Link the main.css stylesheet -->
     <link href="css/main.css" rel="stylesheet">
 
+<!--Temporary icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Lora" rel="stylesheet">
 
@@ -28,12 +31,11 @@
     if (item) {
     item.className=(item.className=='hidden')?'unhidden':'hidden';
     }}
-
     //Toggle Left Navigation background
     var navBarOut = false;
     function showLeftNavBar() {
       document.getElementById("leftNavBar").style.marginLeft = "-1px";
-      document.getElementById("navTab").style.marginLeft = "150px";
+      document.getElementById("navTab").style.marginLeft = "125px";
       document.getElementById("navTab").innerHTML = "<";
       navBarOut = true;
     }
@@ -73,13 +75,11 @@
     }
     </script>
     <style>
-
     .dropdown {
       position: relative;
       margin-bottom: 50px;
       display: inline-block;
     }
-
     .dropdown-content {
       display: none;
       position: inherit;
@@ -89,7 +89,6 @@
       padding: 12px 16px;
       z-index: 1;
     }
-
     .dropdown:hover .dropdown-content {
       display: block;
     }
@@ -105,7 +104,7 @@
     		<a href=#>Top</a>
     		<a href=#999>Bottom</a>
     		<br>
-    		<p>Directory<p>
+    		<p>DIRECTORY<p>
     		<a href=#1>Bio</a>
     		<a href=#2>Projects</a>
     		<a href=#3>Community</a>
@@ -120,8 +119,8 @@
      <div style="padding-bottom: 50px" class="container">
        <div class="row centered">
          <div class="col-lg-12 animated fadeInUp">
-           <img style="width: 300px" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/27973837_2062230274019945_8583885449370869022_n.jpg?_nc_cat=0&oh=82faf184f8cd2fe92e1d5d7397fcce6a&oe=5B6D25D4" />
-           <h1>Crista Falk</h1>
+           <img style="width: 300px" src="images/me.jpg" />
+           <h1 class="me">Crista Falk</h1>
            <h3>Musician, Programmer, Lifelong Learner |
             <a style="color: gray" href="mailto:cristafalk@gmail.com">cristafalk@gmail.com</a>
            </h3>
@@ -141,7 +140,7 @@
            <p id="1">I am a junior in high school and am involved in a number of extracurriculars: varsity scholastic team, FIRST robotics, Girlscouts, teen library volunteering, Girls Who Code, National Honor Society, and my high school's band program. I play both lead saxophone in jazz band and first chair oboe. In my future, I plan to pursue a CS degree and enter the field of data science with a focus on deep learning.</p>
          </div>
   <div class="col-lg-3">
-    <h3><a href="https://girlswhocode-csm.symplicity.com/profiles/crista.falk"><i class="icon-file"></i><t>Online Resume</t></a></h3>
+    <h3><a href="https://girlswhocode-csm.symplicity.com/profiles/crista.falk"><i class="fa">&#xf0f6;</i><t>Online Resume</t></a></h3>
   </div>
 
     </div><!--/.row-->
@@ -159,6 +158,12 @@
     					<h3 id="2">PROJECTS</h3>
     				</div><br/>
 
+            <div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" style="text-transform:none" class="col-lg-3">
+              <p class="tight"><sm>French Final Project</sm>
+              </br><a href="french_project/civilités.html">FRENCH CURRICULUM MEMES</a><br/>
+              </p>
+              <p style="text-transform:uppercase"><more><sm>An assemblage of original memes "en francais" to showcase my mastery of the French language after 3 years of honors instruction. Also, Internet memes are the future.</sm></more></p>
+            </div>
             <div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" style="text-transform:none" class="col-lg-3">
     					<p class="tight"><sm>FIRST Robotics Code (in Python and Java)</sm>
               </br><a href="https://github.com/gizmo-cda/TeraViks-3145">TERAVIKS ROBOTICS</a><br/>
@@ -283,29 +288,35 @@
         </div><br/>
 
         <div>
-          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 20px; margin-left: 150px">
+          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 2vw; margin-left: 10vw; margin-right: 10vw;">
           <p><t>Girl Scouts: President</t><br/>
             <i>GS Bronze Award</i><br/>
             <i>GS Silver Award</i><br/>
             <i>Working Toward Gold!</i><br/>
           </p> </div>
-          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 20px; margin-left: 150px">
+          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 2vw; margin-left: 10vw; margin-right: 10vw;">
           <p><t>Band Program: Secretary</t><br/>
             <i>Freshman, Sophomore, and Junior Year Letterer</i><br/>
-            <i>Outstanding Freshman Award; Outstanding Junior Award</i><br/>
+            <i>Outstanding Freshman Award; Outstanding Sophomore Award</i><br/>
             <i><strong>2017-</strong> District Oboe Solo Winner (Solo and Ensemble)</i></br>
             <i><strong>2018-</strong> District Woodwind Quartet Winner (Solo and Ensemble)</i><br/>
+            <i><strong>2018-</strong> Second Woodwind Quartet (Idaho State Solo and Ensemble)</i><br/>
+            <i><strong>2018-</strong> Seattle Heritage Festival Maestro Award (solo jazz saxophone ballad)</i><br/>
           </p> </div>
-          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 20px; margin-left: 150px">
+          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 2vw; margin-left: 10vw; margin-right: 10vw;">
           <p><t>Scholastic Team: Varsity Captain</t><br/>
             <i>Freshman, Sophomore, Junior Letterer</i><br/>
           </p> </div>
-          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 20px; margin-left: 150px">
+          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 2vw; margin-left: 10vw; margin-right: 10vw;">
           <p><t>Robotics: Lead Programmer</t><br/>
             <i><strong>2017-</strong> Spirit of the Team Award (individual)</i><br/>
             <i><strong>2018-</strong> Idaho Regional Winning Alliance (team)</i><br/>
+            <i><strong>2018-</strong> FRC World Championship competitor (team)</i><br/>
           </p> </div>
-          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 20px; margin-left: 150px">
+          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 2vw; margin-left: 10vw; margin-right: 10vw;">
+          <p><t>National Honor Society: President</t><br/>
+          </p> </div>
+          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 2vw; margin-left: 10vw; margin-right: 10vw;">
           <p><t>Miscellaneous</t><br/>
             <i><strong>2016-</strong> Voice of Democracy - VFW Audio Essay: 1st Place Local; 3rd Place District</i><br/>
             <i><strong>2017-</strong> Recipient of "Gold Key" in Idaho Scholastic Writing Awards for Short Story submission</i><br/>
@@ -315,13 +326,6 @@
             <i><strong>2018-</strong> Quest Bridge College Prep Scholar</i><br/>
           </p> </div>
         </div>
-    </div><!--/.row -->
-    <br>
-  </div><!--/.container -->
-
-
-<section id="contact" name="contact"></section>
-	<!--FOOTER DESCRIPTION -->
 	<div id="footwrap" class="footer">
 		<div class="container">
 			<div class="row">
@@ -332,20 +336,20 @@
 				</div>
 				<!-- EDIT: email -->
 				<div class="col-lg-6">
-					<p><t>Website</t><br/>
+					<p><t style="color: white">Website</t><br/>
 						<a href="dominos.com" class="mail">dominos.com</a> <br/>
 					</p>
-					<p><t>Address</t><br/>
+					<p><t style="color: white">Address</t><br/><t><a href="https://goo.gl/maps/ygGXnodvFho">
 						50 W Neider Ave, <br/>
 						Coeur d'Alene, ID 83815 <br/>
-						United States of America<br/>
-					</p>
-					<p><t>Phone</t><br/>
+						United States of America<br/></a>
+					</t></p>
+					<p><t style="color: white">Phone</t><br/>
 						<a href="tel:2087651216" class="tel">(208) 765-1216</a> <br/>
 					</p>
 				</div>
 				<div class="col-lg-3">
-					<p>SOCIAL LINKS</p>
+					<p style="color:white">SOCIAL LINKS</p>
 					<h1 id="999">
 						<!-- EDIT: Social Links. Replace # with your URL for each -->
 						<a href="https://twitter.com/CristaFalk?lang=en" target="_blank"><i class="icon-twitter"></i></a>
