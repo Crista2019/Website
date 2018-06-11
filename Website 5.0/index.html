@@ -3,365 +3,67 @@
  <head>
    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="personal website">
-    <meta name="author" content="Crista Falk">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="icon.png" />
-   <title>Crista Falk</title>
-   <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-
-    <!-- Link the main.css stylesheet -->
-    <link href="css/main.css" rel="stylesheet">
-
-<!--Temporary icons-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Lora" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>-->
-    <script src="js/html5shiv.js"></script>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script type="text/javascript">
-    function unhide(divID) {
-    var item = document.getElementById(divID);
-    if (item) {
-    item.className=(item.className=='hidden')?'unhidden':'hidden';
-    }}
-    //Toggle Left Navigation background
-    var navBarOut = false;
-    function showLeftNavBar() {
-      document.getElementById("leftNavBar").style.marginLeft = "-1px";
-      document.getElementById("navTab").style.marginLeft = "125px";
-      document.getElementById("navTab").innerHTML = "<";
-      navBarOut = true;
-    }
-    function hideLeftNavBar() {
-      document.getElementById("leftNavBar").style.marginLeft = "-230px";
-      document.getElementById("navTab").style.marginLeft = "-80px";
-      document.getElementById("navTab").innerHTML = ">";
-      navBarOut = false;
-    }
-    function toggleNavBar() {
-      navBarOut ? hideLeftNavBar() : showLeftNavBar();
-    }
-    //Navigation Bar Tab Move on Hover Effect
-    function navTabMove() {
-    if (!navBarOut) {
-        document.getElementById("navTab").style.marginLeft = "0px";
-        document.getElementById("navTab").style.cursor = "pointer";
-        document.getElementById("leftNavBar").style.marginLeft = "-140px";
-    }
-    else {
-        document.getElementById("navTab").style.marginLeft = "110px";
-        document.getElementById("navTab").style.cursor = "pointer";
-        document.getElementById("leftNavBar").style.marginLeft = "-30px";
-    }
-  }
-  function navTabMoveBack() {
-    if (!navBarOut) {
-        document.getElementById("navTab").style.marginLeft = "-30px";
-        document.getElementById("navTab").style.cursor = "default";
-        document.getElementById("leftNavBar").style.marginLeft = "-200px";
-    }
-    else {
-        document.getElementById("navTab").style.marginLeft = "120px";
-        document.getElementById("navTab").style.cursor = "default";
-        document.getElementById("leftNavBar").style.marginLeft = "-1px";
-      }
-    }
-    </script>
-    <style>
-    .dropdown {
-      position: relative;
-      margin-bottom: 50px;
-      display: inline-block;
-    }
-    .dropdown-content {
-      display: none;
-      position: inherit;
-      background-color: #f9f9f9;
-      min-width: 200px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-      padding: 12px 16px;
-      z-index: 1;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    </style>
-    <script src="js/respond.min.js"></script>
-    <!--[endif]-->
+   <title>La famille</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
  </head>
- <body>
-   <div onmouseover="navTabMove()" onmouseout="navTabMoveBack()" onmousedown="toggleNavBar()" id="navTab">></div>
-  	<div id="leftNavBar">
-    		<br>
-    		<p>LOCATION</p>
-    		<a href=#>Top</a>
-    		<a href=#999>Bottom</a>
-    		<br>
-    		<p>DIRECTORY<p>
-    		<a href=#1>Bio</a>
-    		<a href=#2>Projects</a>
-    		<a href=#3>Community</a>
-    		<a href=#4>Awards</a>
-    		<br>
-    		<!-- <p>BROWSE</p>
-    		<a onmousedown="jumpToRandSpot()" href=#>Random</a> -->
-
-  	</div>
-
-   <div class="header" id="headerwrap">
-     <div style="padding-bottom: 50px" class="container">
-       <div class="row centered">
-         <div class="col-lg-12 animated fadeInUp">
-           <img style="width: 300px" src="images/me.jpg" />
-           <h1 class="me">Crista Falk</h1>
-           <h3>Musician, Programmer, Lifelong Learner |
-            <a style="color: gray" href="mailto:cristafalk@gmail.com">cristafalk@gmail.com</a>
-           </h3>
-         </div><!--/.col-lg-12-->
-       </div><!--/.row-->
-     </div><!--/.container-->
-   </div><!--/.#headerwrap-->
-
-   <section id="about" name="about"></section>
-   <div class="about">
-     <div class="container">
-       <div class="row">
-         <div class="col-lg-2 col-lg-offset-1">
-           <h5>ABOUT</h5>
-         </div>
-         <div class="col-lg-6">
-           <p id="1">I am a junior in high school and am involved in a number of extracurriculars: varsity scholastic team, FIRST robotics, Girlscouts, teen library volunteering, Girls Who Code, National Honor Society, and my high school's band program. I play both lead saxophone in jazz band and first chair oboe. In my future, I plan to pursue a CS degree and enter the field of data science with a focus on deep learning.</p>
-         </div>
-  <div class="col-lg-3">
-    <h3><a href="https://girlswhocode-csm.symplicity.com/profiles/crista.falk"><i class="fa">&#xf0f6;</i><t>Online Resume</t></a></h3>
-  </div>
-
-    </div><!--/.row-->
-  </div><!--/.container-->
- </div><!--/ #intro-->
-
-<section id="resume" name="resume"></section>
-	<!-- EDUCATION SECTION -->
-	<div class="container desc">
-		<div class="row">
-
-      <div class="container desc">
-    		<div class="row">
-    				<div class="row centered">
-    					<h3 id="2">PROJECTS</h3>
-    				</div><br/>
-
-            <div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" style="text-transform:none" class="col-lg-3">
-              <p class="tight"><sm>French Final Project</sm>
-              </br><a href="french_project/civilités.html">FRENCH CURRICULUM MEMES</a><br/>
-              </p>
-              <p style="text-transform:uppercase"><more><sm>An assemblage of original memes "en francais" to showcase my mastery of the French language after 3 years of honors instruction. Also, Internet memes are the future.</sm></more></p>
-            </div>
-            <div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" style="text-transform:none" class="col-lg-3">
-    					<p class="tight"><sm>FIRST Robotics Code (in Python and Java)</sm>
-              </br><a href="https://github.com/gizmo-cda/TeraViks-3145">TERAVIKS ROBOTICS</a><br/>
-    					</p>
-    					<p style="text-transform:uppercase"><more><sm>An ongoing repo of the code I write for my FIRST robotics team's competition bot</sm></more></p>
-    				</div>
-    				<div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" class="col-lg-3">
-    					<p><sm>2016 Independent Study</sm><br/>
-    						<a href="https://github.com/Crista2019/Independent-Study-2015-2016">Principles & Applications of Electronics</a><br/>
-    					</p>
-    				</div>
-    				<div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" class="col-lg-3">
-              <p><sm>2017 Independent Study</sm><br/>
-    						<a href="https://github.com/Crista2019/Independent-Study-2016-2017">Data Structures and Algorithms</a><br/>
-    					</p>
-    				</div>
-    				<div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" class="col-lg-3">
-              <p><sm>Additional Projects to Come...</sm><br/>
-    						<a href="https://github.com/Crista2019">My Github Repo</a><br/>
-    					</p>
-    				</div>
-    		</div><!--/.row -->
-    		<br>
-    	</div><!--/.container --><hr>
-
-				<div class="row centered">
-					<h3 id="3">COMMUNITY INVOLVEMENT</h3>
-				</div><br/>
-				<div style="text-align: center">
-          <a href="javascript:unhide('info2015')" style="font-size:50px">2015</a>
-          <div class="hidden" id="info2015">
-          <p><t><a href="http://www.cdaid.org/Home/ShowPage?path=2860">Arbor Day</a></t><br/>
-						<i>Volunteering with my Girl Scout troop at the annual Arbor Day Celebration.</i>
-					</p>
-					<p><t><a href="http://www.cdapress.com/archive/article-2b70c2e5-42f1-5e41-9fa9-8b2be9a01938.html">Cybersecurity Camp</a></t><br/>
-            <i>Participating in the AFA CyberCamp Program.</i>
-          </p>
-				</div> </div></br>
-				<div style="text-align: center">
-        <a href="javascript:unhide('info2016')" style="font-size:50px">2016</a>
-        <div class="hidden" id="info2016">
-          <p><t><a href="https://www.facebook.com/VFWinCDA/posts/652867521483096">Voice of Democracy</a></t><br/>
-            <i>Voice of Democracy audio-essay contest.</i>
-          </p>
-          <p><t><a href="https://www.inlander.com/spokane/thinkers-and-tinkers/Content?oid=2691020">Gizmo</a></t><br/>
-            <i>Programming for FRC team #3145.</i>
-          </p>
-          <p><t><a href="http://www.cdapress.com/archive/article-adc185ea-bea6-11e6-a40c-4b4ae4c9349b.html">Hour Of Code</a></t><br/>
-          <i>Volunteer mentor for the Hour of Code event.</i>
-          </p>
-				</div> </div></br>
-        <div style="text-align: center">
-          <a href="javascript:unhide('info2017')" style="font-size:50px">2017</a>
-          <div class="hidden" id="info2017">
-          <p><t><a href="http://www.cdapress.com/article/20170220/ARTICLE/170229997">Academic Honors #1</a></t><br/>
-            <i>Sophomore Honor Roll.</i>
-          </p>
-            <p><t><a href="https://www.uidaho.edu/cda/news-events/featured-stories/dignit-interns">DigN'IT Tech Internship</a></t><br/>
-              <i>Interning at Extratech through University of Idaho's DigN'IT Program.</i>
-            </p>
-          </div>
-				</div> </br>
-        <div style="text-align: center">
-          <a href="javascript:unhide('info2018')" style="font-size:50px">2018</a>
-          <div class="hidden" id="info2018">
-          <p><t><a href="http://www.cdapress.com/local_news/20171026/a_colorful_lesson_in_french">Elementary School French</a></t><br/>
-            <i>Teaching French to Skyway Elementary schoolers avec mon cours de français au niveau collégial.</i>
-          </p>
-          <p><t><a href="http://www.cdapress.com/local_news/20171219/putting_a_pen_to_the_past">Kootenai County History</a></t></br>
-            <i>Historic Preservation Commision Essay Contest.</i>
-          </p>
-          <p><t><a href="http://www.cdapress.com/local_news/20180223/lake_city_high_school_honor_roll">Academic Honors #2</a></t><br/>
-            <i>Junior Honor Roll.</i>
-          </p>
-          <p><t><a href="https://www.aspirations.org/blog/nearly-four-hundred-us-high-school-women-are-recognized-technological-achievements">NCWIT Aspirations in Computing</a></t><br/>
-            <i>National honorable mention and Idaho Affiliate award winner.</i>
-          </p>
-          <p><t><a href="http://www.cdapress.com/local_news/20180405/first_boise_then_the_world">FRC Championships</a></t><br/>
-            <i>My robotics team, on its way to the FIRST World Championships.</i>
-          </p><br/>
-				</div> </div>
-
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
-
-	<!-- WORK SECTION -->
-	<!--<div class="container desc">
-		<div class="row">
-				 <div class="row centered">
-					<h3>WORK</h3>
-				</div>
-				<div class="col-lg-6">
-					<p class="tight"><t>Position </t><br/>
-						Thatone Corp. <br/>
-					</p>
-					<p><more>Here's where you put a description of the position you held. Responsibilities, accomplishments - the same as you would do on a standard paper resume, but this will be online and look cooler.</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><t>AUGUST 2012 - CURRENT <br />
-					CITY, STATE, COUNTRY</t></p>
-				</div>
-				<div class="col-lg-6 col-lg-offset-3">
-					<p class="tight"><t>Previous Position</t><br/>
-						Another Organization Ltd. <br/>
-					</p>
-					<p><more>You worked at another job! Great! Describe waht you did there, include those responsibilities and accomplishments again.</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><t>JUNE 2010 - JULY 2012 <br />
-					GOTHAM CITY, USA</t></p>
-				</div>
-		</div
-		<br>
-		<hr>
-	</div>-->
-  <div class="container desc">
-    <div class="row">
-        <div class="row centered">
-          <h3 id="4">AWARDS</h3>
-        </div><br/>
-
-        <div>
-          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 2vw; margin-left: 10vw; margin-right: 10vw;">
-          <p><t>Girl Scouts: President</t><br/>
-            <i>GS Bronze Award</i><br/>
-            <i>GS Silver Award</i><br/>
-            <i>Working Toward Gold!</i><br/>
-          </p> </div>
-          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 2vw; margin-left: 10vw; margin-right: 10vw;">
-          <p><t>Band Program: Secretary</t><br/>
-            <i>Freshman, Sophomore, and Junior Year Letterer</i><br/>
-            <i>Outstanding Freshman Award; Outstanding Sophomore Award</i><br/>
-            <i><strong>2017-</strong> District Oboe Solo Winner (Solo and Ensemble)</i></br>
-            <i><strong>2018-</strong> District Woodwind Quartet Winner (Solo and Ensemble)</i><br/>
-            <i><strong>2018-</strong> Second Woodwind Quartet (Idaho State Solo and Ensemble)</i><br/>
-            <i><strong>2018-</strong> Seattle Heritage Festival Maestro Award (solo jazz saxophone ballad)</i><br/>
-          </p> </div>
-          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 2vw; margin-left: 10vw; margin-right: 10vw;">
-          <p><t>Scholastic Team: Varsity Captain</t><br/>
-            <i>Freshman, Sophomore, Junior Letterer</i><br/>
-          </p> </div>
-          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 2vw; margin-left: 10vw; margin-right: 10vw;">
-          <p><t>Robotics: Lead Programmer</t><br/>
-            <i><strong>2017-</strong> Spirit of the Team Award (individual)</i><br/>
-            <i><strong>2018-</strong> Idaho Regional Winning Alliance (team)</i><br/>
-            <i><strong>2018-</strong> FRC World Championship competitor (team)</i><br/>
-          </p> </div>
-          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 2vw; margin-left: 10vw; margin-right: 10vw;">
-          <p><t>National Honor Society: President</t><br/>
-          </p> </div>
-          <div onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 2vw; margin-left: 10vw; margin-right: 10vw;">
-          <p><t>Miscellaneous</t><br/>
-            <i><strong>2016-</strong> Voice of Democracy - VFW Audio Essay: 1st Place Local; 3rd Place District</i><br/>
-            <i><strong>2017-</strong> Recipient of "Gold Key" in Idaho Scholastic Writing Awards for Short Story submission</i><br/>
-            <i><strong>2017-</strong> Kootenai Historic Preservation Commission Essay Contest First Honorable Mention</i><br/>
-            <i><strong>2018-</strong> National Honorable Mention of the NCWIT Award for Aspirations in Computing</i><br/>
-            <i><strong>2018-</strong> Idaho Affiliate Award Winner of the 2018 NCWIT Award for Aspirations in Computing</i><br/>
-            <i><strong>2018-</strong> Quest Bridge College Prep Scholar</i><br/>
-          </p> </div>
+<body>
+  <nav class="col-1">
+    <h2 style="text-decoration: underline; color:red">Naviguer</h2>
+    <a href="civilités.html">Civilités</a>
+    <a href="physiquement.html">Se décrire physiquement</a>
+    <a style="color: red" href="famille.html"><strong>La famille</strong></a>
+    <a href="aliments.html">Aliments</a>
+    <a href="vêtements.html">Vêtements</a>
+    <a href="verbes_et_grammaire.html">Verbes et grammaire</a>
+    <a href="endroits.html">Endroits à visiter</a>
+    <a href="maison.html">La maison</a>
+    <a href="temps.html">Temps</a>
+    <a href="histoire.html">Histoire</a>
+    <a href="littérature.html">Littérature</a>
+    <a href="maurerisms.html">Maurer-isms</a>
+  </nav>
+  <div class="col-2">
+  	<header>
+      <h2>La famille</h2>
+      <h4>Nous sommes une famille. Venez sur toutes mes soeurs et moi.</h4>
+    </header>
+    <main class="content">
+    <article>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images\album3\nom.png">
+            <img src="images\album3\nom.png" alt="nom" width="300" height="200">
+          </a>
+          <div class="desc">Papa</div>
         </div>
-	<div id="footwrap" class="footer">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>IT'S DANGEROUS TO GIVE AWAY YOUR INFORMATION ON THE INTERNET,
-            <br/>SO HERE IS THE CONTACT INFO FOR DOMINO'S PIZZA.</h5>
-				</div>
-				<!-- EDIT: email -->
-				<div class="col-lg-6">
-					<p><t style="color: white">Website</t><br/>
-						<a href="dominos.com" class="mail">dominos.com</a> <br/>
-					</p>
-					<p><t style="color: white">Address</t><br/><t><a href="https://goo.gl/maps/ygGXnodvFho">
-						50 W Neider Ave, <br/>
-						Coeur d'Alene, ID 83815 <br/>
-						United States of America<br/></a>
-					</t></p>
-					<p><t style="color: white">Phone</t><br/>
-						<a href="tel:2087651216" class="tel">(208) 765-1216</a> <br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p style="color:white">SOCIAL LINKS</p>
-					<h1 id="999">
-						<!-- EDIT: Social Links. Replace # with your URL for each -->
-						<a href="https://twitter.com/CristaFalk?lang=en" target="_blank"><i class="icon-twitter"></i></a>
-						<a href="https://www.facebook.com/crista.falk.5" target="_blank"><i class="icon-facebook"></i></a>
-						<a href="https://www.linkedin.com/in/crista-falk-278157142/" target="_blank"><i class="icon-linkedin"></i></a>
-						<a href="https://github.com/Crista2019"><i class="icon-github" target="_blank"></i></a>
-            <a href="https://www.instagram.com/crista2019/" target="_blank"><i class="icon-instagram"></i></a>
-          </h1>
-				</div>
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #footer -->
-
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images\album3\gang.jpg">
+            <img src="images\album3\gang.jpg" alt="gang" width="300" height="200">
+          </a>
+          <div class="desc">Le gang est tout ici</div>
+        </div>
+      </div>
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images\album3\harold.jpeg">
+            <img src="images\album3\harold.jpeg" alt="Harold" width="300" height="200">
+          </a>
+          <div class="desc">Le Harold</div>
+        </div>
+      </div>
+    </article>
+    <aside>
+      <p>Cliquez pour aller à l'unité suivante</p>
+      <a href="aliments.html"><img class="nextImg" src="images\album4\thumb\thumb.jpg" alt="Next"/></a>
+    </aside>
+    </main>
+  	<footer>
+      <div style="padding:6px;">
+        <p>Vous ne pouvez pas choisir votre famille, mais vous pouvez choisir ce que vous appelez les.</p>
+      </div>
+    </footer>
+  </div>
 </body>
-</html>
