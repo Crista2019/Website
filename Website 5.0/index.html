@@ -15,8 +15,178 @@
     <!-- Link the main.css stylesheet -->
     <link href="css/main.css" rel="stylesheet">
 
-<!--Temporary icons-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    /*---------------------------------------------------
+      ANIMATIONS
+    ---------------------------------------------------*/
+
+    /* rotate right */
+    .rotate {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -o-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      -ms-transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -o-transition-property: transform;
+      -moz-transition-property: transform;
+      -ms-transition-property: transform;
+
+    }
+    .rotate:hover, .rotate:focus, .rotate:active {
+      -webkit-transform: rotate(50deg);
+      transform: rotate(50deg);
+      -o-transform: rotate(50deg);
+      -moz-transform: rotate(50deg);
+      -ms-transform: rotate(50deg);
+    }
+
+    /* shrink */
+    .shrink {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-transition-duration: 0.8s;
+      transition-duration: 0.8s;
+      -o-transition-duration: 0.8s;
+      -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+    }
+    .shrink:hover, .shrink:focus, .shrink:active {
+      -webkit-transform: scale(.95);
+      transform: scale(.95);
+      -o-transform: scale(.95);
+      -moz-transform: scale(.95);
+      -ms-transform: scale(.95);
+    }
+
+    /* Up */
+    .up {
+      display: inline-block;
+      vertical-align: middle;
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      transition-duration: 0.3s;
+      transition-property: transform;
+      -o-transition-timing-function: ease-out;
+      -o-transition-duration: 0.3s;
+      -moz-transition-property: transform;
+      -moz-transition-timing-function: ease-out;
+      -ms-transition-duration: 0.3s;
+      -ms-transition-property: transform;
+      -webkit-transition-timing-function: ease-out;
+      -webkit-transition-duration: 0.3s;
+    }
+    .up:hover,
+    .up:focus,
+    .up:active {
+      transform: translateY(-5px);
+      -o-transform: translateY(-5px);
+      -moz-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      -webkit-transform: translateY(-5px);
+    }
+
+    /* stretch */
+    .stretch {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    }
+    .stretch:hover, .stretch:focus, .stretch:active {
+      animation: stretch 1s ease-out forwards;
+      -webkit-animation: stretch 1s ease-out forwards;
+      -o-animation: stretch 1s ease-out forwards;
+      -moz-animation: stretch 1s ease-out forwards;
+      -ms-animation: stretch 1s ease-out forwards;
+    }
+
+    @keyframes stretch{
+      0%{
+        letter-spacing: 0px;
+        margin-left: 0px;
+      }
+      50%{
+        letter-spacing: 1px;
+        margin-left: -8px;
+      }
+      80%{
+        letter-spacing: 2px;
+        margin-left: -16px;
+      }
+    }
+    @-o-keyframes stretch{
+      0%{
+        letter-spacing: 0px;
+        margin-left: 0px;
+      }
+      50%{
+        letter-spacing: 1px;
+        margin-left: -8px;
+      }
+      80%{
+        letter-spacing: 2px;
+        margin-left: -16px;
+      }
+    }
+    @-ms-keyframes stretch{
+      0%{
+        letter-spacing: 0px;
+        margin-left: 0px;
+      }
+      50%{
+        letter-spacing: 1px;
+        margin-left: -8px;
+      }
+      80%{
+        letter-spacing: 2px;
+        margin-left: -16px;
+      }
+    }
+    @-moz-keyframes stretch{
+      0%{
+        letter-spacing: 0px;
+        margin-left: 0px;
+      }
+      50%{
+        letter-spacing: 1px;
+        margin-left: -8px;
+      }
+      80%{
+        letter-spacing: 2px;
+        margin-left: -16px;
+      }
+    }
+    @-webkit-keyframes stretch{
+      0%{
+        letter-spacing: 0px;
+        margin-left: 0px;
+      }
+      50%{
+        letter-spacing: 1px;
+        margin-left: -8px;
+      }
+      80%{
+        letter-spacing: 2px;
+        margin-left: -16px;
+      }
+    }
+    </style>
+
+    <!--Temporary icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Lora" rel="stylesheet">
@@ -122,7 +292,7 @@
            <img style="width: 300px" src="images/me.jpg" />
            <h1 class="me">Crista Falk</h1>
            <h3>Musician, Programmer, Lifelong Learner |
-            <a style="color: gray" href="mailto:cristafalk@gmail.com">cristafalk@gmail.com</a>
+            <a class="up" style="color: gray" href="mailto:cristafalk@gmail.com">cristafalk@gmail.com</a>
            </h3>
          </div><!--/.col-lg-12-->
        </div><!--/.row-->
@@ -137,10 +307,10 @@
            <h5>ABOUT</h5>
          </div>
          <div class="col-lg-6">
-           <p id="1">I am a junior in high school and am involved in a number of extracurriculars: varsity scholastic team, FIRST robotics, Girlscouts, teen library volunteering, Girls Who Code, National Honor Society, and my high school's band program. I play both lead saxophone in jazz band and first chair oboe. In my future, I plan to pursue a CS degree and enter the field of data science with a focus on deep learning.</p>
+           <p id="1">I am a senior in high school and am involved in a number of extracurriculars: varsity scholastic team, FIRST robotics, Girlscouts, teen library volunteering, Girls Who Code, National Honor Society, ETS/TRiO, and my high school's band program. I play both lead saxophone in jazz band and first chair oboe. In my future, I plan to pursue a CS degree and enter the field of data science with a focus on deep learning.</p>
          </div>
   <div class="col-lg-3">
-    <h3><a href="https://girlswhocode-csm.symplicity.com/profiles/crista.falk"><i class="fa">&#xf0f6;</i><t>Online Resume</t></a></h3>
+    <h3><a href="https://girlswhocode-csm.symplicity.com/profiles/crista.falk"><i class="rotate fa">&#xf0f6;</i><t>Online Resume</t></a></h3>
   </div>
 
     </div><!--/.row-->
@@ -148,10 +318,8 @@
  </div><!--/ #intro-->
 
 <section id="resume" name="resume"></section>
-	<!-- EDUCATION SECTION -->
-	<div class="container desc">
+	<div style="box-shadow:1px 1px 5px #555; padding:10px 100px inset" class="container desc">
 		<div class="row">
-
       <div class="container desc">
     		<div class="row">
     				<div class="row centered">
@@ -196,11 +364,12 @@
     		<br>
     	</div><!--/.container --><hr>
 
+      <div class="container desc">
 				<div class="row centered">
 					<h3 id="3">COMMUNITY INVOLVEMENT</h3>
 				</div><br/>
 				<div style="text-align: center">
-          <a href="javascript:unhide('info2015')" style="font-size:50px">2015</a>
+          <a class="up" href="javascript:unhide('info2015')" style="font-size:50px">2015</a>
           <div class="hidden" id="info2015">
           <p><t><a href="http://www.cdaid.org/Home/ShowPage?path=2860">Arbor Day</a></t><br/>
 						<i>Volunteering with my Girl Scout troop at the annual Arbor Day Celebration.</i>
@@ -210,7 +379,7 @@
           </p>
 				</div> </div></br>
 				<div style="text-align: center">
-        <a href="javascript:unhide('info2016')" style="font-size:50px">2016</a>
+        <a class="up" href="javascript:unhide('info2016')" style="font-size:50px">2016</a>
         <div class="hidden" id="info2016">
           <p><t><a href="https://www.facebook.com/VFWinCDA/posts/652867521483096">Voice of Democracy</a></t><br/>
             <i>Voice of Democracy audio-essay contest.</i>
@@ -223,7 +392,7 @@
           </p>
 				</div> </div></br>
         <div style="text-align: center">
-          <a href="javascript:unhide('info2017')" style="font-size:50px">2017</a>
+          <a class="up" href="javascript:unhide('info2017')" style="font-size:50px">2017</a>
           <div class="hidden" id="info2017">
           <p><t><a href="http://www.cdapress.com/article/20170220/ARTICLE/170229997">Academic Honors #1</a></t><br/>
             <i>Sophomore Honor Roll.</i>
@@ -234,7 +403,7 @@
           </div>
 				</div> </br>
         <div style="text-align: center">
-          <a href="javascript:unhide('info2018')" style="font-size:50px">2018</a>
+          <a class="up" href="javascript:unhide('info2018')" style="font-size:50px">2018</a>
           <div class="hidden" id="info2018">
           <p><t><a href="http://www.cdapress.com/local_news/20171026/a_colorful_lesson_in_french">Elementary School French</a></t><br/>
             <i>Teaching French to Skyway Elementary schoolers avec mon cours de français au niveau collégial.</i>
@@ -252,11 +421,10 @@
             <i>My robotics team, on its way to the FIRST World Championships.</i>
           </p><br/>
 				</div> </div>
-
 		</div><!--/.row -->
 		<br>
 		<hr>
-	</div><!--/.container -->
+  </div>
 
 	<!-- WORK SECTION -->
 	<!--<div class="container desc">
@@ -278,7 +446,7 @@
 					<p class="tight"><t>Previous Position</t><br/>
 						Another Organization Ltd. <br/>
 					</p>
-					<p><more>You worked at another job! Great! Describe waht you did there, include those responsibilities and accomplishments again.</more></p>
+					<p><more>You worked at another job! Great! Describe what I did there, include those responsibilities and accomplishments again.</more></p>
 				</div>
 				<div class="col-lg-3">
 					<p><t>JUNE 2010 - JULY 2012 <br />
@@ -288,7 +456,8 @@
 		<br>
 		<hr>
 	</div>-->
-  <div class="container desc">
+
+  <div <div class="container desc">
     <div class="row">
         <div class="row centered">
           <h3 id="4">AWARDS</h3>
@@ -333,37 +502,43 @@
             <i><strong>2018-</strong> Quest Bridge College Prep Scholar</i><br/>
           </p> </div>
         </div>
+      </div>
+    </div>
+  </div>
+
 	<div id="footwrap" class="footer">
 		<div class="container">
 			<div class="row">
 
 				<div class="col-lg-2 col-lg-offset-1">
-					<h5>IT'S DANGEROUS TO GIVE AWAY YOUR INFORMATION ON THE INTERNET,
-            <br/>SO HERE IS THE CONTACT INFO FOR DOMINO'S PIZZA.</h5>
+					<h6 style="color: white"><i>It's dangerous to give away personal information on the Internet,
+            <br/><br/>So instead here is the contact information for the National Park Foundation.
+            <br/><br/><br>Thank you!</i>
+          </h6>
 				</div>
 				<!-- EDIT: email -->
 				<div class="col-lg-6">
 					<p><t style="color: white">Website</t><br/>
-						<a href="dominos.com" class="mail">dominos.com</a> <br/>
+						<a href="dominos.com" class="stretch mail">www.nationalparks.org</a> <br/>
 					</p>
-					<p><t style="color: white">Address</t><br/><t><a href="https://goo.gl/maps/ygGXnodvFho">
-						50 W Neider Ave, <br/>
-						Coeur d'Alene, ID 83815 <br/>
-						United States of America<br/></a>
+					<p><t style="color: white">Address</t><br/><t><a class="stretch" href="https://goo.gl/maps/ygGXnodvFho">
+            1110 Vermont Avenue, NW  <br/>
+						Suite 200 <br/>
+						Washington, DC 20005 <br/></a>
 					</t></p>
 					<p><t style="color: white">Phone</t><br/>
-						<a href="tel:2087651216" class="tel">(208) 765-1216</a> <br/>
+						<a href="tel:2087651216" class="stretch tel">(202) 796-2500</a> <br/>
 					</p>
 				</div>
 				<div class="col-lg-3">
 					<p style="color:white">SOCIAL LINKS</p>
 					<h1 id="999">
 						<!-- EDIT: Social Links. Replace # with your URL for each -->
-						<a href="https://twitter.com/CristaFalk?lang=en" target="_blank"><i class="icon-twitter"></i></a>
-						<a href="https://www.facebook.com/crista.falk.5" target="_blank"><i class="icon-facebook"></i></a>
-						<a href="https://www.linkedin.com/in/crista-falk-278157142/" target="_blank"><i class="icon-linkedin"></i></a>
-						<a href="https://github.com/Crista2019"><i class="icon-github" target="_blank"></i></a>
-            <a href="https://www.instagram.com/crista2019/" target="_blank"><i class="icon-instagram"></i></a>
+						<div class="rotate"><a href="https://twitter.com/CristaFalk?lang=en" target="_blank"><i class="icon-twitter"></i></a></div>
+						<div class="rotate"><a href="https://www.facebook.com/crista.falk.5" target="_blank"><i class="icon-facebook"></i></a></div>
+						<div class="rotate"><a href="https://www.linkedin.com/in/crista-falk-278157142/" target="_blank"><i class="icon-linkedin"></i></a></div>
+						<div class="rotate"><a href="https://github.com/Crista2019"><i class="icon-github" target="_blank"></i></a></div>
+            <div class="rotate"><a href="https://www.instagram.com/crista2019/" target="_blank"><i class="icon-instagram"></i></a></div>
           </h1>
 				</div>
 			</div><!--/.row -->
