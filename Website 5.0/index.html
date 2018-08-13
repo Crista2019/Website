@@ -371,10 +371,11 @@
     		<a href=#999>Bottom</a>
     		<br>
     		<p>DIRECTORY<p>
-    		<a href=#1>Bio</a>
+    		<a href=#1>About</a>
     		<a href=#2>Projects</a>
-    		<a href=#3>Community</a>
-    		<a href=#4>Awards</a>
+    		<a href=#3>Independent Studies</a>
+        <a href=#4>Community</a>
+    		<a href=#5>Awards</a>
     		<br>
     		<!-- <p>BROWSE</p>
     		<a onmousedown="jumpToRandSpot()" href=#>Random</a> -->
@@ -396,14 +397,14 @@
    </div><!--/.#headerwrap-->
 
    <section id="about" name="about"></section>
-   <div class="about">
+   <div id="1" class="about">
      <div class="container">
        <div class="row">
          <div class="col-lg-2 col-lg-offset-1">
            <h5>ABOUT</h5>
          </div>
          <div class="col-lg-6">
-           <p id="1">I am a senior in high school and am involved in a number of extracurriculars: varsity scholastic team, FIRST robotics, Girlscouts, teen library volunteering, Girls Who Code, National Honor Society, ETS/TRiO, and my high school's band program. I play both lead saxophone in jazz band and first chair oboe. In my future, I plan to pursue a CS degree and enter the field of data science with a focus on deep learning.</p>
+           <p>I am a senior in high school and am involved in a number of extracurriculars: varsity scholastic team, FIRST robotics, Girlscouts, teen library volunteering, Girls Who Code, National Honor Society, ETS/TRiO, and my high school's band program. I play both lead saxophone in jazz band and first chair oboe. In my future, I plan to pursue a CS degree and enter the field of data science with a focus on deep learning.</p>
          </div>
   <div class="col-lg-3">
     <h3><a href="assets/resume.pdf"><i class="rotate fa">&#xf0f6;</i><t>Online Resume</t></a></h3>
@@ -416,10 +417,10 @@
 <section id="resume" name="resume"></section>
 	<div style="box-shadow:1px 2px 8px #555 inset; padding:10px 60px" class="container desc">
 		<div class="row">
-      <div class="container desc">
+      <div id="2" class="container desc">
     		<div class="row">
     				<div class="row centered">
-    					<h3 id="2">PROJECTS</h3>
+    					<h3>PROJECTS</h3>
     				</div><br/>
             <div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" style="text-transform:none" class="up col-lg-3">
               <p class="tight"><sm>Translate words into nonsense!</sm>
@@ -465,31 +466,28 @@
             </p>
           </div>
         </div>
-        <br><hr>
-        <div class="row">
-          <div class="row centered">
-            <h3 id="2">INDEPENDENT STUDIES</h3>
-          </div><br>
-          <div class="col-lg-3"></div>
-          <div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" class="up col-lg-3">
-            <p><sm>2017 Independent Study</sm><br/>
-              <a class="wobble" href="https://github.com/Crista2019/Independent-Study-2016-2017">Data Structures and Algorithms</a><br/>
-            </p>
-          </div>
-          <div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" class="up col-lg-3">
-            <p><sm>2016 Independent Study</sm><br/>
-              <a class="wobble" href="https://github.com/Crista2019/Independent-Study-2015-2016">Principles & Applications of Electronics</a><br/>
-            </p>
-          </div>
+      </div><br><hr>
+      <div id="3" class="container desc">
+        <div class="row centered">
+          <h3>INDEPENDENT STUDIES</h3>
+        </div><br>
+        <div class="col-lg-3"></div>
+        <div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" class="up col-lg-3">
+          <p><sm>2017 Independent Study</sm><br/>
+            <a class="wobble" href="https://github.com/Crista2019/Independent-Study-2016-2017">Data Structures and Algorithms</a><br/>
+          </p>
+        </div>
+        <div onmouseover="this.style.background='rgba(0, 0, 0, .1)';" onmouseout="this.style.background='#f2f2f2';" class="up col-lg-3">
+          <p><sm>2016 Independent Study</sm><br/>
+            <a class="wobble" href="https://github.com/Crista2019/Independent-Study-2015-2016">Principles & Applications of Electronics</a><br/>
+          </p>
         </div>
       </div>
-    </div>
-    <br>
-  </div><!--/.container --><hr>
+      <br><br><hr>
 
-  <div class="container desc">
+  <div id="4" class="container desc">
     <div class="row centered">
-      <h3 id="3">COMMUNITY INVOLVEMENT</h3>
+      <h3>COMMUNITY INVOLVEMENT</h3>
     </div><br/>
     <div style="text-align: center">
       <a class="up" href="javascript:unhide('info2015')" style="font-size:50px">2015</a>
@@ -547,9 +545,7 @@
       </p><br/>
     </div> </div>
 </div><!--/.row -->
-<br>
-<hr>
-</div>
+<br><br><hr>
 
 <!-- WORK SECTION -->
 <!--<div class="container desc">
@@ -582,11 +578,11 @@
 <hr>
 </div>-->
 
-<div <div class="container desc">
+<div id="5" class="container desc">
 <div class="row">
     <div class="row centered">
-      <h3 id="4">AWARDS</h3>
-    </div><br/>
+      <h3>AWARDS</h3>
+    </div>
 
     <div>
       <div class="col-sm-12" onmouseover="this.style.borderLeft='4px solid teal';" onmouseout="this.style.borderLeft='none';" style="text-transform:none; padding-left: 2vw; margin-left: 6vw;">
@@ -628,6 +624,7 @@
       </p> </div>
     </div>
   </div>
+</div>
 </div>
 </div>
 
